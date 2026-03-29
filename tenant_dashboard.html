@@ -1,0 +1,891 @@
+<!DOCTYPE html><html><head>
+    <style>@layer theme, base, paraflow, components, utilities;</style><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    
+    
+    <style id="moxt-styled">@layer paraflow{@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=PT+Serif:wght@400;700&family=Arimo:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700&;800;900&family=Rubik:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&family=Merriweather:wght@300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700&family=Libre+Baskerville:wght@400;700&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.pf-9c86328d-BODY-6a92e9225a2fa89f528cb5eede3ae81c {
+    font-family: "Poppins", sans-serif;
+}
+}</style>
+<!--FontAwesome version: 6.7.2--><link rel="stylesheet" href="https://static.paraflowcontent.com/public/css/font-awesome/font-awesome.672.css"><!--Tailwind version: 4.0.17--><script src="https://static.paraflowcontent.com/public/js/tailwind/tailwind.js"></script><!--iconify-icon version: 3.0.0--><script src="https://static.paraflowcontent.com/public/js/iconify/iconify-icon-3.0.0.js"></script></head>
+<body id="24:1" title="tenant_dashboard.html" orderindex="80" relativetransform="11940, 125" class="pf-9c86328d-BODY-6a92e9225a2fa89f528cb5eede3ae81c w-[1440px] min-h-[900px]" style="background-color: rgba(248, 250, 252, 1);">
+<header id="24:2" orderindex="80" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);" class="w-full">
+<div id="24:3" orderindex="80" style="margin-right: auto; margin-left: auto; padding: 1rem 1.5rem;" class="max-w-7xl">
+<div id="24:4" orderindex="80" class="flex justify-between items-center">
+<div id="24:5" orderindex="80" class="flex items-center gap-x-3">
+<div id="24:6" orderindex="80" style="background-color: rgba(4, 50, 78, 1);" class="flex justify-center items-center w-10 h-10 rounded-lg">
+<img id="24:7" orderindex="80" alt="Haxis logo" src="https://static.paraflowcontent.com/public/resource/image/60a6f624-f697-4fee-b488-17c185373edd.svg" class="w-6 h-6">
+</div>
+<span id="24:8" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="text-2xl font-bold">HAXIS</span>
+<span id="47:1" orderindex="82" style="color: rgba(13, 155, 106, 1);" class="text-sm ml-2 font-semibold">- AI-Powered Trust</span></div>
+<div id="24:9" orderindex="81" style="flex-basis: 0%;" class="grow shrink max-w-128 mr-8 ml-8">
+<div id="24:10" orderindex="80" class="relative">
+<input id="24:11" orderindex="80" class="focus:ring-2 focus:ring-[#0D9B6A] focus:border-transparent w-full pt-3 pr-12 pb-3 pl-4 border-[1px] border-solid rounded-lg" type="text" placeholder="Ask AI: &quot;Find 2BR apartments in Lekki under ₦500k&quot;">
+<button id="24:12" orderindex="81" style="top: 50%; transform: NaN; translate: 0 -50%;" class="absolute right-3">
+<i id="66:1" orderindex="80" class="fas fa-sparkles text-lg mr-2" style="color: oklch( 62.7% 0.194 149.214 );"></i>
+<i id="66:2" orderindex="81" class="fas fa-microphone text-lg" style="color: oklch( 55.1% 0.027 264.364 );"></i>
+</button>
+</div>
+</div>
+<div id="24:14" orderindex="82" class="flex items-center gap-x-4"><button id="47:2" orderindex="80" class="hover:bg-gray-100 flex relative justify-center items-center w-10 h-10 rounded-lg">
+<div id="47:3" orderindex="80" class="relative">
+<iconify-icon id="47:4" orderindex="80" style="color: oklch( 44.6% 0.03 256.802 );" icon="lucide:message-circle-more" class="text-xl"></iconify-icon>
+<iconify-icon id="47:5" orderindex="81" style="color: rgba(13, 155, 106, 1);" icon="lucide:sparkles" class="text-xs absolute -top-1 -right-1"></iconify-icon>
+</div>
+</button>
+<button id="24:15" orderindex="81" class="hover:bg-gray-100 flex relative justify-center items-center w-10 h-10 rounded-lg">
+<iconify-icon id="24:16" orderindex="80" style="color: oklch( 44.6% 0.03 256.802 );" icon="lucide:bell" class="text-xl"></iconify-icon>
+<span id="24:17" orderindex="81" style="background-color: rgba(239, 68, 68, 1); color: rgba(255, 255, 255, 1);" class="text-xs flex absolute -top-1 -right-1 justify-center items-center w-5 h-5 font-bold rounded-full">!</span>
+</button>
+<button id="24:18" orderindex="82" class="hover:bg-gray-100 flex relative justify-center items-center w-10 h-10 rounded-lg">
+<iconify-icon id="24:19" orderindex="80" style="color: oklch( 44.6% 0.03 256.802 );" icon="lucide:message-circle" class="text-xl"></iconify-icon>
+<span id="24:20" orderindex="81" style="background-color: rgba(4, 50, 78, 1); color: rgba(255, 255, 255, 1);" class="text-xs flex absolute -top-1 -right-1 justify-center items-center w-5 h-5 rounded-full">5</span>
+</button>
+<button id="66:3" orderindex="83" class="hover:bg-green-700 flex justify-center items-center w-10 h-10 rounded-lg" style="background-color: rgba(13, 155, 106, 1);"><i id="66:4" orderindex="80" class="fas fa-sparkles text-xl" style="color: rgba(255, 255, 255, 1);"></i></button><div id="24:21" orderindex="84" class="relative">
+<button id="24:22" orderindex="80" class="hover:bg-gray-100 flex items-center gap-x-2 p-2 rounded-lg">
+<img id="24:23" orderindex="80" alt="Profile photo of smiling young professional" src="https://static.paraflowcontent.com/public/resource/image/af416afa-49d8-4c26-91d3-a62cc5d8fe77.jpeg" class="w-8 h-8 object-cover rounded-full">
+<div id="47:6" orderindex="81" style="background-color: rgba(13, 155, 106, 0.1); color: rgba(13, 155, 106, 1); padding: 0.25rem 0.5rem;" class="text-xs flex items-center gap-x-1 font-bold rounded-full">
+<i id="66:5" orderindex="80" class="fas fa-shield-alt text-xs"></i>
+<span id="66:6" orderindex="81">78/100</span>
+</div><iconify-icon id="24:24" orderindex="82" style="color: oklch( 70.7% 0.022 261.325 );" icon="lucide:chevron-down"></iconify-icon>
+</button>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div id="24:25" orderindex="81" class="flex">
+<aside id="24:26" orderindex="80" style="background-color: rgba(255, 255, 255, 1); border-right-style: solid;" class="w-80 min-h-full border-r-[1px] p-6">
+<button id="66:7" orderindex="80" class="hover:bg-green-700 flex justify-center items-center gap-x-2 w-full mb-3 font-semibold rounded-lg" style="color: white; padding: 0.75rem 1rem; background: linear-gradient(135deg, rgba(13, 155, 106, 1), rgba(16, 185, 129, 1));">
+<i id="66:8" orderindex="80" class="fas fa-sparkles text-lg"></i>
+<span id="66:9" orderindex="81">Find Properties (AI-Powered)</span>
+</button>
+<button id="66:10" orderindex="81" class="hover:bg-gray-100 flex justify-center items-center gap-x-2 w-full font-semibold border-[1px] border-solid rounded-lg" style="color: rgba(107, 114, 128, 1); padding: 0.75rem 1rem; border-color: oklch( 87.2% 0.01 258.338 );">
+<i id="66:11" orderindex="80" class="fas fa-robot text-lg"></i>
+<span id="66:12" orderindex="81">Ask AI for Help</span>
+</button>
+<div id="66:13" orderindex="82" style="background-color: rgba(16, 185, 129, 0.1);" class="mt-6 p-4 rounded-xl">
+<div id="66:14" orderindex="80" class="text-center">
+<div id="66:15" orderindex="80" style="color: rgba(13, 155, 106, 1);" class="text-2xl mb-1 font-bold">+5 points</div>
+<div id="66:16" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-sm mb-2">this week</div>
+<div id="66:17" orderindex="82" style="color: rgba(107, 114, 128, 1);" class="text-xs mb-3">3 points to Trusted tier</div>
+<div id="66:18" orderindex="83" style="background-color: rgba(239, 246, 255, 1);" class="p-2 rounded-lg">
+<div id="66:19" orderindex="80" class="flex items-center gap-x-1 mb-1">
+<i id="66:20" orderindex="80" class="fas fa-lightbulb text-xs" style="color: oklch( 62.3% 0.214 259.815 );"></i>
+<span id="66:21" orderindex="81" style="color: rgba(30, 64, 175, 1);" class="text-xs font-medium">Tip</span>
+</div>
+<p id="66:22" orderindex="81" style="color: rgba(59, 130, 246, 1);" class="text-xs">Complete verification to gain 15 points</p>
+</div>
+</div>
+</div></aside>
+<main id="24:65" orderindex="81" style="flex-basis: 0%;" class="grow shrink p-8"><div id="47:9" orderindex="80" class="mb-6">
+<div id="47:10" orderindex="80" style="margin-top: 0;" class="flex gap-x-4 mb-3">
+<div id="47:11" orderindex="80" style="background-color: oklch( 98% 0.016 73.684 ); flex-basis: 0%;" class="flex grow shrink justify-between items-center p-4 border-[1px] border-solid rounded-xl">
+<div id="47:12" orderindex="80" class="flex items-center gap-x-3">
+<div id="47:13" orderindex="80" style="background-color: oklch( 95.4% 0.038 75.164 );" class="flex justify-center items-center w-8 h-8 rounded-lg">
+<iconify-icon id="47:14" orderindex="80" style="color: oklch( 64.6% 0.222 41.116 );" icon="lucide:bell"></iconify-icon>
+</div>
+<span id="47:15" orderindex="81" style="color: oklch( 40.8% 0.123 38.172 );" class="font-medium">Price Drop! Property you saved is now ₦50k cheaper</span>
+</div>
+<button id="47:16" orderindex="81" class="hover:bg-orange-700 text-sm font-medium rounded-lg" style="background-color: oklch( 64.6% 0.222 41.116 ); color: rgba(255, 255, 255, 1); padding: 0.5rem 1rem;">View Property</button>
+</div>
+</div>
+<div id="47:17" orderindex="81" class="flex gap-x-4">
+<div id="47:18" orderindex="80" style="background-color: oklch( 98.2% 0.018 155.826 ); flex-basis: 0%;" class="flex grow shrink justify-between items-center p-4 border-[1px] border-solid rounded-xl">
+<div id="47:19" orderindex="80" class="flex items-center gap-x-3">
+<div id="47:20" orderindex="80" style="background-color: oklch( 96.2% 0.044 156.743 );" class="flex justify-center items-center w-8 h-8 rounded-lg">
+<iconify-icon id="47:21" orderindex="80" style="color: oklch( 62.7% 0.194 149.214 );" icon="lucide:sparkles"></iconify-icon>
+</div>
+<span id="47:22" orderindex="81" style="color: oklch( 39.3% 0.095 152.535 );" class="font-medium">3 New High Matches (85%+) in Lekki</span>
+</div>
+<button id="47:23" orderindex="81" class="hover:bg-green-700 text-sm font-medium rounded-lg" style="background-color: oklch( 62.7% 0.194 149.214 ); color: rgba(255, 255, 255, 1); padding: 0.5rem 1rem;">See Matches</button>
+</div>
+<div id="47:24" orderindex="81" style="background-color: oklch( 97% 0.014 254.604 ); flex-basis: 0%;" class="flex grow shrink justify-between items-center p-4 border-[1px] border-solid rounded-xl">
+<div id="47:25" orderindex="80" class="flex items-center gap-x-3">
+<div id="47:26" orderindex="80" style="background-color: oklch( 93.2% 0.032 255.585 );" class="flex justify-center items-center w-8 h-8 rounded-lg">
+<iconify-icon id="47:27" orderindex="80" style="color: oklch( 54.6% 0.245 262.881 );" icon="lucide:calendar"></iconify-icon>
+</div>
+<span id="47:28" orderindex="81" style="color: oklch( 37.9% 0.146 265.522 );" class="font-medium">Viewing scheduled tomorrow 10am with Mr. Adebayo</span>
+</div>
+<button id="47:29" orderindex="81" class="hover:bg-blue-700 text-sm font-medium rounded-lg" style="background-color: oklch( 54.6% 0.245 262.881 ); color: rgba(255, 255, 255, 1); padding: 0.5rem 1rem;">Get Directions</button>
+</div>
+</div>
+</div>
+<div id="24:66" orderindex="81" class="mb-8">
+<div id="47:30" orderindex="80" class="flex justify-between items-start mb-6">
+<div id="66:23" orderindex="80">
+<h1 id="66:24" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-3xl mb-2 font-bold">Welcome back, Chioma! 🌟</h1>
+<p id="66:25" orderindex="81" style="color: rgba(107, 114, 128, 1);">Tuesday, November 21, 2024</p>
+</div>
+<div id="66:26" orderindex="81" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(16, 185, 129, 0.1));" class="mt-4 p-4 rounded-xl">
+<div id="66:27" orderindex="80" class="flex items-center gap-x-2">
+<i id="66:28" orderindex="80" class="fas fa-sparkles" style="color: oklch( 62.3% 0.214 259.815 );"></i>
+<span id="66:29" orderindex="81" style="color: rgba(30, 64, 175, 1);" class="font-medium">We found 3 new matches that fit your budget and location preferences</span>
+</div>
+</div>
+</div>
+<div id="47:34" orderindex="81" style="background: linear-gradient(135deg, rgba(13, 155, 106, 0.02) 0%, rgba(13, 155, 106, 0.05) 100%);" class="mb-8 p-8 border-[2px] border-solid rounded-2xl">
+<div id="47:35" orderindex="80" class="flex items-center gap-x-3 mb-4">
+<div id="47:36" orderindex="80" style="background-color: oklch( 96.2% 0.044 156.743 );" class="flex justify-center items-center w-10 h-10 rounded-lg">
+<iconify-icon id="47:37" orderindex="80" style="color: oklch( 62.7% 0.194 149.214 );" icon="lucide:sparkles" class="text-xl"></iconify-icon>
+</div>
+<div id="47:38" orderindex="81">
+<h2 id="47:39" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-2xl font-bold"><span id="48:1" orderindex="80">AI Best Matches for You</span> <span id="47:40" orderindex="81" style="color: oklch( 62.7% 0.194 149.214 );" class="text-lg font-medium">(AI-Selected)</span></h2>
+<p id="47:41" orderindex="81" style="color: oklch( 44.6% 0.03 256.802 );" class="text-sm">These properties scored 85%+ match based on your preferences, budget, and behavior</p>
+</div>
+</div>
+<div id="47:42" orderindex="81" class="grid grid-cols-3 gap-x-6">
+<div id="47:43" orderindex="80" class="hover:shadow-xl overflow-x-hidden overflow-y-hidden border-[1px] border-solid rounded-2xl" style="background-color: rgba(255, 255, 255, 1);">
+<div id="47:44" orderindex="80" class="relative">
+<img id="47:45" orderindex="80" alt="Modern 3-bedroom apartment with city view and premium amenities" src="https://static.paraflowcontent.com/public/resource/image/95bbf664-b712-43d9-8a56-60bf6fa4c445.jpeg" class="w-full h-60 object-cover">
+<div id="47:46" orderindex="81" class="absolute top-4 left-4">
+<span id="47:47" orderindex="80" style="background-color: oklch( 62.7% 0.194 149.214 ); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.75rem;" class="text-sm font-bold rounded-full">89% Match</span>
+</div>
+<div id="47:48" orderindex="82" class="flex absolute top-4 right-4 flex-col gap-y-2">
+<span id="47:49" orderindex="80" style="background-color: oklch( 62.7% 0.194 149.214 ); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.5rem;" class="text-xs flex items-center gap-x-1 rounded-full">
+<iconify-icon id="47:50" orderindex="80" icon="lucide:shield-check" class="text-xs"></iconify-icon>
+<span id="48:2" orderindex="81">AI-Verified</span>
+</span>
+<span id="47:51" orderindex="81" style="background-color: oklch( 54.6% 0.245 262.881 ); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.5rem;" class="text-xs rounded-full">Landlord: 92/100</span>
+</div>
+</div>
+<div id="47:52" orderindex="81" class="p-6">
+<div id="47:53" orderindex="80" class="flex items-center gap-x-2 mb-3">
+<div id="47:54" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-2xl font-bold">₦550,000/year</div>
+<span id="47:55" orderindex="81" style="background-color: oklch( 96.2% 0.044 156.743 ); color: oklch( 52.7% 0.154 150.069 ); padding: 0.25rem 0.5rem;" class="text-xs font-medium rounded-full">Fair Price</span>
+</div>
+<h3 id="47:56" orderindex="81" style="color: oklch( 21% 0.034 264.665 );" class="text-xl mb-2 font-semibold">Modern 3BR Apartment</h3>
+<div id="47:57" orderindex="82" style="color: oklch( 44.6% 0.03 256.802 );" class="flex items-center mb-4">
+<iconify-icon id="47:58" orderindex="80" icon="lucide:map-pin" class="text-sm mr-1"></iconify-icon>
+<span id="47:59" orderindex="81" class="text-sm">Lekki Phase 1, Lagos</span>
+</div>
+<div id="47:60" orderindex="83" style="background-color: oklch( 98.5% 0.002 247.839 );" class="mb-4 p-3 rounded-lg">
+<div id="47:61" orderindex="80" class="flex justify-between items-center">
+<span id="47:62" orderindex="80" style="color: oklch( 37.3% 0.034 259.733 );" class="text-sm font-medium">Why this matches you</span>
+<iconify-icon id="47:63" orderindex="81" style="color: oklch( 55.1% 0.027 264.364 );" icon="lucide:chevron-down"></iconify-icon>
+</div>
+<div id="47:64" orderindex="81" class="mt-2">
+<div id="47:65" orderindex="80" style="margin-top: 0; color: oklch( 44.6% 0.03 256.802 );" class="text-xs flex items-center mb-1">
+<iconify-icon id="47:66" orderindex="80" style="color: oklch( 62.7% 0.194 149.214 );" icon="lucide:check" class="mr-2"></iconify-icon>
+<span id="48:3" orderindex="81">Budget match: ₦550k (within your ₦400k-₦600k range)</span>
+</div>
+<div id="47:67" orderindex="81" style="margin-top: 0; color: oklch( 44.6% 0.03 256.802 );" class="text-xs flex items-center mb-1">
+<iconify-icon id="47:68" orderindex="80" style="color: oklch( 62.7% 0.194 149.214 );" icon="lucide:check" class="mr-2"></iconify-icon>
+<span id="48:4" orderindex="81">Location: Lekki (your top searched area)</span>
+</div>
+<div id="47:69" orderindex="82" style="margin-top: 0; color: oklch( 44.6% 0.03 256.802 );" class="text-xs flex items-center mb-1">
+<iconify-icon id="47:70" orderindex="80" style="color: oklch( 62.7% 0.194 149.214 );" icon="lucide:check" class="mr-2"></iconify-icon>
+<span id="48:5" orderindex="81">High-trust landlord (matches your preference)</span>
+</div>
+<div id="47:71" orderindex="83" style="color: oklch( 44.6% 0.03 256.802 );" class="text-xs flex items-center">
+<iconify-icon id="47:72" orderindex="80" style="color: oklch( 62.7% 0.194 149.214 );" icon="lucide:check" class="mr-2"></iconify-icon>
+<span id="48:6" orderindex="81">Generator backup (you viewed this amenity often)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="47:73" orderindex="81" class="hover:shadow-xl overflow-x-hidden overflow-y-hidden border-[1px] border-solid rounded-2xl" style="background-color: rgba(255, 255, 255, 1);">
+<div id="47:74" orderindex="80" class="relative">
+<img id="47:75" orderindex="80" alt="Luxury 2-bedroom apartment with pool and modern finishes" src="https://static.paraflowcontent.com/public/resource/image/57808980-9090-4193-bfb2-023f7def93cd.jpeg" class="w-full h-60 object-cover">
+<div id="47:76" orderindex="81" class="absolute top-4 left-4">
+<span id="47:77" orderindex="80" style="background-color: oklch( 62.7% 0.194 149.214 ); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.75rem;" class="text-sm font-bold rounded-full">87% Match</span>
+</div>
+<div id="47:78" orderindex="82" class="flex absolute top-4 right-4 flex-col gap-y-2">
+<span id="47:79" orderindex="80" style="background-color: oklch( 62.7% 0.194 149.214 ); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.5rem;" class="text-xs flex items-center gap-x-1 rounded-full">
+<iconify-icon id="47:80" orderindex="80" icon="lucide:shield-check" class="text-xs"></iconify-icon>
+<span id="48:7" orderindex="81">AI-Verified</span>
+</span>
+<span id="47:81" orderindex="81" style="background-color: oklch( 54.6% 0.245 262.881 ); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.5rem;" class="text-xs rounded-full">Landlord: 88/100</span>
+</div>
+</div>
+<div id="47:82" orderindex="81" class="p-6">
+<div id="47:83" orderindex="80" class="flex items-center gap-x-2 mb-3">
+<div id="47:84" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-2xl font-bold">₦480,000/year</div>
+<span id="47:85" orderindex="81" style="background-color: oklch( 95.4% 0.038 75.164 ); color: oklch( 55.3% 0.195 38.402 ); padding: 0.25rem 0.5rem;" class="text-xs font-medium rounded-full">15% Below Market</span>
+</div>
+<h3 id="47:86" orderindex="81" style="color: oklch( 21% 0.034 264.665 );" class="text-xl mb-2 font-semibold">Luxury 2BR Apartment</h3>
+<div id="47:87" orderindex="82" style="color: oklch( 44.6% 0.03 256.802 );" class="flex items-center mb-4">
+<iconify-icon id="47:88" orderindex="80" icon="lucide:map-pin" class="text-sm mr-1"></iconify-icon>
+<span id="47:89" orderindex="81" class="text-sm">Victoria Island, Lagos</span>
+</div>
+</div>
+</div>
+<div id="47:90" orderindex="82" class="hover:shadow-xl overflow-x-hidden overflow-y-hidden border-[1px] border-solid rounded-2xl" style="background-color: rgba(255, 255, 255, 1);">
+<div id="47:91" orderindex="80" class="relative">
+<img id="47:92" orderindex="80" alt="Spacious 3-bedroom house with garden and security" src="https://static.paraflowcontent.com/public/resource/image/a0b8e349-1974-4107-b3ad-e5ec8ad6a7dc.jpeg" class="w-full h-60 object-cover">
+<div id="47:93" orderindex="81" class="absolute top-4 left-4">
+<span id="47:94" orderindex="80" style="background-color: oklch( 62.7% 0.194 149.214 ); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.75rem;" class="text-sm font-bold rounded-full">85% Match</span>
+</div>
+<div id="47:95" orderindex="82" class="flex absolute top-4 right-4 flex-col gap-y-2">
+<span id="47:96" orderindex="80" style="background-color: oklch( 62.7% 0.194 149.214 ); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.5rem;" class="text-xs flex items-center gap-x-1 rounded-full">
+<iconify-icon id="47:97" orderindex="80" icon="lucide:shield-check" class="text-xs"></iconify-icon>
+<span id="48:8" orderindex="81">AI-Verified</span>
+</span>
+<span id="47:98" orderindex="81" style="background-color: oklch( 54.6% 0.245 262.881 ); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.5rem;" class="text-xs rounded-full">Landlord: 95/100</span>
+</div>
+</div>
+<div id="47:99" orderindex="81" class="p-6">
+<div id="47:100" orderindex="80" class="flex items-center gap-x-2 mb-3">
+<div id="47:101" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-2xl font-bold">₦580,000/year</div>
+<span id="47:102" orderindex="81" style="background-color: oklch( 96.2% 0.044 156.743 ); color: oklch( 52.7% 0.154 150.069 ); padding: 0.25rem 0.5rem;" class="text-xs font-medium rounded-full">Fair Price</span>
+</div>
+<h3 id="47:103" orderindex="81" style="color: oklch( 21% 0.034 264.665 );" class="text-xl mb-2 font-semibold">Spacious 3BR House</h3>
+<div id="47:104" orderindex="82" style="color: oklch( 44.6% 0.03 256.802 );" class="flex items-center mb-4">
+<iconify-icon id="47:105" orderindex="80" icon="lucide:map-pin" class="text-sm mr-1"></iconify-icon>
+<span id="47:106" orderindex="81" class="text-sm">Lekki Phase 2, Lagos</span>
+</div>
+</div>
+</div>
+</div>
+<div id="47:107" orderindex="82" class="text-center mt-6">
+<button id="47:108" orderindex="80" class="hover:bg-green-700 flex items-center gap-x-2 font-semibold rounded-lg" style="background-color: oklch( 62.7% 0.194 149.214 ); margin-right: auto; margin-left: auto; color: rgba(255, 255, 255, 1); padding: 0.75rem 2rem;">
+<iconify-icon id="47:109" orderindex="80" icon="lucide:sparkles"></iconify-icon>
+<span id="48:9" orderindex="81">View All AI Matches</span>
+</button>
+</div>
+</div>
+<div id="47:110" orderindex="82" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);" class="p-6 border-[1px] border-solid rounded-2xl">
+<div id="66:30" orderindex="80" class="flex items-center gap-x-2 mb-4">
+<i id="66:31" orderindex="80" class="fas fa-bullseye text-xl" style="color: rgba(13, 155, 106, 1);"></i>
+<h3 id="66:32" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="text-lg font-semibold">AI Smart Search</h3>
+</div>
+<div id="66:33" orderindex="81" class="grid grid-cols-3 gap-x-4 mb-4">
+<div id="66:34" orderindex="80">
+<label id="66:35" orderindex="80" style="color: rgba(107, 114, 128, 1);" class="text-sm block mb-1 font-medium">Budget</label>
+<input id="66:36" orderindex="81" class="focus:ring-2 focus:ring-green-500 focus:border-transparent w-full border-[1px] border-solid rounded-lg" style="padding: 0.5rem 0.75rem; border-color: rgba(209, 213, 219, 1);" value="₦400k-₦600k" type="text">
+</div>
+<div id="66:37" orderindex="81">
+<label id="66:38" orderindex="80" style="color: rgba(107, 114, 128, 1);" class="text-sm block mb-1 font-medium">Location</label>
+<input id="66:39" orderindex="81" class="focus:ring-2 focus:ring-green-500 focus:border-transparent w-full border-[1px] border-solid rounded-lg" style="padding: 0.5rem 0.75rem; border-color: rgba(209, 213, 219, 1);" value="Lekki/Ajah/Ikeja" type="text">
+</div>
+<div id="66:40" orderindex="82">
+<label id="66:41" orderindex="80" style="color: rgba(107, 114, 128, 1);" class="text-sm block mb-1 font-medium">Bedrooms</label>
+<input id="66:42" orderindex="81" class="focus:ring-2 focus:ring-green-500 focus:border-transparent w-full border-[1px] border-solid rounded-lg" style="padding: 0.5rem 0.75rem; border-color: rgba(209, 213, 219, 1);" value="2-3" type="text">
+</div>
+</div>
+<div id="66:43" orderindex="82" class="mb-4">
+<label id="66:44" orderindex="80" class="flex items-center gap-x-2">
+<input id="66:45" orderindex="80" type="checkbox" checked="" class="rounded-sm">
+<span id="66:46" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-sm">Only show high-trust landlords (80+)</span>
+</label>
+</div>
+<div id="66:47" orderindex="83" style="background-color: rgba(239, 246, 255, 1);" class="mb-4 p-3 rounded-lg">
+<div id="66:48" orderindex="80" class="flex items-center gap-x-2">
+<i id="66:49" orderindex="80" class="fas fa-lightbulb" style="color: oklch( 62.3% 0.214 259.815 );"></i>
+<span id="66:50" orderindex="81" style="color: rgba(30, 64, 175, 1);" class="text-sm font-medium">Try: Properties with generator backup in Lekki</span>
+</div>
+</div>
+<button id="66:51" orderindex="84" style="color: white; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, rgba(13, 155, 106, 1), rgba(16, 185, 129, 1));" class="w-full font-semibold rounded-lg">
+<i id="66:52" orderindex="80" class="fas fa-sparkles mr-2"></i>
+<span id="67:1" orderindex="81">AI Smart Search</span>
+</button>
+</div>
+</div>
+<div id="24:85" orderindex="82" class="grid grid-cols-4 gap-x-8">
+<div id="24:86" orderindex="80" style="grid-column-start: span 3; grid-column-end: span 3;">
+<section id="24:87" orderindex="80" style="margin-top: 0;" class="mb-8">
+<div id="24:88" orderindex="80" class="flex justify-between items-center mb-6">
+<div id="24:89" orderindex="80">
+<h2 id="24:90" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-2xl mb-2 font-bold">Recommended for You</h2>
+<p id="24:91" orderindex="81" style="color: oklch( 44.6% 0.03 256.802 );">Based on your preferences and recent searches</p>
+</div>
+<a id="24:92" orderindex="81" class="hover:text-[#0a8659] font-medium" style="color: rgba(13, 155, 106, 1);" href="#">View All</a>
+</div>
+<div id="24:93" orderindex="81" class="grid grid-cols-2 gap-y-6 gap-x-6">
+<div id="24:94" orderindex="80" class="hover:shadow-lg border-[1px] border-solid rounded-2xl" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);">
+<div id="24:95" orderindex="80" class="relative">
+<img id="24:96" orderindex="80" alt="Modern 2-bedroom apartment with balcony and city view" src="https://static.paraflowcontent.com/public/resource/image/b65113f1-b52e-41db-86af-109a80c72d34.jpeg" class="w-full h-48 object-cover rounded-tl-2xl rounded-tr-2xl">
+<div id="24:97" orderindex="81" class="absolute top-4 left-4">
+<span id="24:98" orderindex="80" style="background-color: rgba(13, 155, 106, 1); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.5rem;" class="text-xs flex items-center gap-x-1 rounded-full">
+<iconify-icon id="24:99" orderindex="80" icon="lucide:shield-check" class="text-xs"></iconify-icon>
+<span id="24:100" orderindex="81">Verified</span>
+</span>
+</div>
+<button id="24:101" orderindex="82" class="hover:bg-white flex absolute top-4 right-4 justify-center items-center w-8 h-8 rounded-full" style="background-color: color-mix( in oklab , #fff 80% , transparent ); backdrop-filter: blur(8px);">
+<iconify-icon id="24:102" orderindex="80" style="color: oklch( 44.6% 0.03 256.802 );" icon="lucide:heart"></iconify-icon>
+</button>
+</div>
+<div id="24:103" orderindex="81" class="p-6">
+<div id="24:104" orderindex="80" class="mb-3">
+<div id="24:105" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-xl mb-1 font-bold">₦350,000/year</div>
+<h3 id="24:106" orderindex="81" style="color: oklch( 21% 0.034 264.665 );" class="text-lg font-semibold">Modern 2BR Apartment</h3>
+</div>
+<div id="24:107" orderindex="81" style="color: oklch( 44.6% 0.03 256.802 );" class="flex items-center mb-4">
+<iconify-icon id="24:108" orderindex="80" icon="lucide:map-pin" class="text-sm mr-1"></iconify-icon>
+<span id="24:109" orderindex="81" class="text-sm">Lekki Phase 1, Lagos</span>
+</div>
+<div id="24:110" orderindex="82" style="color: oklch( 44.6% 0.03 256.802 );" class="text-sm flex items-center gap-x-4">
+<div id="24:111" orderindex="80" class="flex items-center gap-x-1">
+<iconify-icon id="24:112" orderindex="80" icon="lucide:bed" class="text-sm"></iconify-icon>
+<span id="24:113" orderindex="81">2 beds</span>
+</div>
+<div id="24:114" orderindex="81" class="flex items-center gap-x-1">
+<iconify-icon id="24:115" orderindex="80" icon="lucide:bath" class="text-sm"></iconify-icon>
+<span id="24:116" orderindex="81">2 baths</span>
+</div>
+<div id="24:117" orderindex="82" class="flex items-center gap-x-1">
+<iconify-icon id="24:118" orderindex="80" icon="lucide:car" class="text-sm"></iconify-icon>
+<span id="24:119" orderindex="81">Parking</span>
+</div>
+</div>
+</div>
+</div>
+<div id="24:120" orderindex="81" class="hover:shadow-lg border-[1px] border-solid rounded-2xl" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);">
+<div id="24:121" orderindex="80" class="relative">
+<img id="24:122" orderindex="80" alt="Spacious 3-bedroom house with garden and garage" src="https://static.paraflowcontent.com/public/resource/image/dedeb74c-f202-4873-a6d9-71b6742f9fe3.jpeg" class="w-full h-48 object-cover rounded-tl-2xl rounded-tr-2xl">
+<div id="24:123" orderindex="81" class="absolute top-4 left-4">
+<span id="24:124" orderindex="80" style="background-color: rgba(13, 155, 106, 1); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.5rem;" class="text-xs flex items-center gap-x-1 rounded-full">
+<iconify-icon id="24:125" orderindex="80" icon="lucide:shield-check" class="text-xs"></iconify-icon>
+<span id="24:126" orderindex="81">Verified</span>
+</span>
+</div>
+<button id="24:127" orderindex="82" class="hover:bg-white flex absolute top-4 right-4 justify-center items-center w-8 h-8 rounded-full" style="background-color: color-mix( in oklab , #fff 80% , transparent ); backdrop-filter: blur(8px);">
+<iconify-icon id="24:128" orderindex="80" style="color: oklch( 44.6% 0.03 256.802 );" icon="lucide:heart"></iconify-icon>
+</button>
+</div>
+<div id="24:129" orderindex="81" class="p-6">
+<div id="24:130" orderindex="80" class="mb-3">
+<div id="24:131" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-xl mb-1 font-bold">₦500,000/year</div>
+<h3 id="24:132" orderindex="81" style="color: oklch( 21% 0.034 264.665 );" class="text-lg font-semibold">Spacious 3BR House</h3>
+</div>
+<div id="24:133" orderindex="81" style="color: oklch( 44.6% 0.03 256.802 );" class="flex items-center mb-4">
+<iconify-icon id="24:134" orderindex="80" icon="lucide:map-pin" class="text-sm mr-1"></iconify-icon>
+<span id="24:135" orderindex="81" class="text-sm">Ikeja GRA, Lagos</span>
+</div>
+<div id="24:136" orderindex="82" style="color: oklch( 44.6% 0.03 256.802 );" class="text-sm flex items-center gap-x-4">
+<div id="24:137" orderindex="80" class="flex items-center gap-x-1">
+<iconify-icon id="24:138" orderindex="80" icon="lucide:bed" class="text-sm"></iconify-icon>
+<span id="24:139" orderindex="81">3 beds</span>
+</div>
+<div id="24:140" orderindex="81" class="flex items-center gap-x-1">
+<iconify-icon id="24:141" orderindex="80" icon="lucide:bath" class="text-sm"></iconify-icon>
+<span id="24:142" orderindex="81">3 baths</span>
+</div>
+<div id="24:143" orderindex="82" class="flex items-center gap-x-1">
+<iconify-icon id="24:144" orderindex="80" icon="lucide:trees" class="text-sm"></iconify-icon>
+<span id="24:145" orderindex="81">Garden</span>
+</div>
+</div>
+</div>
+</div>
+<div id="24:146" orderindex="82" class="hover:shadow-lg border-[1px] border-solid rounded-2xl" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);">
+<div id="24:147" orderindex="80" class="relative">
+<img id="24:148" orderindex="80" alt="Luxury 1-bedroom apartment with pool and gym access" src="https://static.paraflowcontent.com/public/resource/image/fad24e99-b5de-4fc7-8c84-e3a9df65e254.jpeg" class="w-full h-48 object-cover rounded-tl-2xl rounded-tr-2xl">
+<div id="24:149" orderindex="81" class="absolute top-4 left-4">
+<span id="24:150" orderindex="80" style="background-color: rgba(13, 155, 106, 1); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.5rem;" class="text-xs flex items-center gap-x-1 rounded-full">
+<iconify-icon id="24:151" orderindex="80" icon="lucide:shield-check" class="text-xs"></iconify-icon>
+<span id="24:152" orderindex="81">Verified</span>
+</span>
+</div>
+<button id="24:153" orderindex="82" class="hover:bg-white flex absolute top-4 right-4 justify-center items-center w-8 h-8 rounded-full" style="background-color: color-mix( in oklab , #fff 80% , transparent ); backdrop-filter: blur(8px);">
+<iconify-icon id="24:154" orderindex="80" style="color: oklch( 44.6% 0.03 256.802 );" icon="lucide:heart"></iconify-icon>
+</button>
+</div>
+<div id="24:155" orderindex="81" class="p-6">
+<div id="24:156" orderindex="80" class="mb-3">
+<div id="24:157" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-xl mb-1 font-bold">₦280,000/year</div>
+<h3 id="24:158" orderindex="81" style="color: oklch( 21% 0.034 264.665 );" class="text-lg font-semibold">Luxury 1BR Apartment</h3>
+</div>
+<div id="24:159" orderindex="81" style="color: oklch( 44.6% 0.03 256.802 );" class="flex items-center mb-4">
+<iconify-icon id="24:160" orderindex="80" icon="lucide:map-pin" class="text-sm mr-1"></iconify-icon>
+<span id="24:161" orderindex="81" class="text-sm">Victoria Island, Lagos</span>
+</div>
+<div id="24:162" orderindex="82" style="color: oklch( 44.6% 0.03 256.802 );" class="text-sm flex items-center gap-x-4">
+<div id="24:163" orderindex="80" class="flex items-center gap-x-1">
+<iconify-icon id="24:164" orderindex="80" icon="lucide:bed" class="text-sm"></iconify-icon>
+<span id="24:165" orderindex="81">1 bed</span>
+</div>
+<div id="24:166" orderindex="81" class="flex items-center gap-x-1">
+<iconify-icon id="24:167" orderindex="80" icon="lucide:bath" class="text-sm"></iconify-icon>
+<span id="24:168" orderindex="81">1 bath</span>
+</div>
+<div id="24:169" orderindex="82" class="flex items-center gap-x-1">
+<iconify-icon id="24:170" orderindex="80" icon="lucide:waves" class="text-sm"></iconify-icon>
+<span id="24:171" orderindex="81">Pool</span>
+</div>
+</div>
+</div>
+</div>
+<div id="24:172" orderindex="83" class="hover:shadow-lg border-[1px] border-solid rounded-2xl" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);">
+<div id="24:173" orderindex="80" class="relative">
+<img id="24:174" orderindex="80" alt="Studio apartment with modern furnishing and WiFi" src="https://static.paraflowcontent.com/public/resource/image/ba651ca0-1dc1-4ae7-8e0d-7983ba8680db.jpeg" class="w-full h-48 object-cover rounded-tl-2xl rounded-tr-2xl">
+<div id="24:175" orderindex="81" class="absolute top-4 left-4">
+<span id="24:176" orderindex="80" style="background-color: rgba(13, 155, 106, 1); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.5rem;" class="text-xs flex items-center gap-x-1 rounded-full">
+<iconify-icon id="24:177" orderindex="80" icon="lucide:shield-check" class="text-xs"></iconify-icon>
+<span id="24:178" orderindex="81">Verified</span>
+</span>
+</div>
+<button id="24:179" orderindex="82" class="hover:bg-white flex absolute top-4 right-4 justify-center items-center w-8 h-8 rounded-full" style="background-color: color-mix( in oklab , #fff 80% , transparent ); backdrop-filter: blur(8px);">
+<iconify-icon id="24:180" orderindex="80" style="color: oklch( 44.6% 0.03 256.802 );" icon="lucide:heart"></iconify-icon>
+</button>
+</div>
+<div id="24:181" orderindex="81" class="p-6">
+<div id="24:182" orderindex="80" class="mb-3">
+<div id="24:183" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-xl mb-1 font-bold">₦200,000/year</div>
+<h3 id="24:184" orderindex="81" style="color: oklch( 21% 0.034 264.665 );" class="text-lg font-semibold">Modern Studio</h3>
+</div>
+<div id="24:185" orderindex="81" style="color: oklch( 44.6% 0.03 256.802 );" class="flex items-center mb-4">
+<iconify-icon id="24:186" orderindex="80" icon="lucide:map-pin" class="text-sm mr-1"></iconify-icon>
+<span id="24:187" orderindex="81" class="text-sm">Yaba, Lagos</span>
+</div>
+<div id="24:188" orderindex="82" style="color: oklch( 44.6% 0.03 256.802 );" class="text-sm flex items-center gap-x-4">
+<div id="24:189" orderindex="80" class="flex items-center gap-x-1">
+<iconify-icon id="24:190" orderindex="80" icon="lucide:bed" class="text-sm"></iconify-icon>
+<span id="24:191" orderindex="81">Studio</span>
+</div>
+<div id="24:192" orderindex="81" class="flex items-center gap-x-1">
+<iconify-icon id="24:193" orderindex="80" icon="lucide:bath" class="text-sm"></iconify-icon>
+<span id="24:194" orderindex="81">1 bath</span>
+</div>
+<div id="24:195" orderindex="82" class="flex items-center gap-x-1">
+<iconify-icon id="24:196" orderindex="80" icon="lucide:wifi" class="text-sm"></iconify-icon>
+<span id="24:197" orderindex="81">WiFi</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="24:198" orderindex="81" style="margin-top: 0;" class="mb-8">
+<div id="24:199" orderindex="80" class="flex justify-between items-center mb-6">
+<div id="24:200" orderindex="80">
+<h2 id="24:201" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-2xl mb-2 font-bold">Your Saved Properties</h2>
+<p id="24:202" orderindex="81" style="color: oklch( 44.6% 0.03 256.802 );">12 properties saved</p>
+</div>
+<a id="24:203" orderindex="81" class="hover:text-[#0a8659] font-medium" style="color: rgba(13, 155, 106, 1);" href="#">View All Saved</a>
+</div>
+<div id="24:204" orderindex="81" class="overflow-x-auto">
+<div id="24:205" orderindex="80" class="flex gap-y-6 gap-x-6 pb-4">
+<div id="24:206" orderindex="80" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);" class="shrink-0 w-80 border-[1px] border-solid rounded-2xl">
+<div id="24:207" orderindex="80" class="relative">
+<img id="24:208" orderindex="80" alt="Elegant 2-bedroom apartment with balcony view" src="https://static.paraflowcontent.com/public/resource/image/91f1f946-9228-4155-8c45-64cb85dcb1ac.jpeg" class="w-full h-44 object-cover rounded-tl-2xl rounded-tr-2xl">
+<button id="24:209" orderindex="81" style="background-color: rgba(13, 155, 106, 1);" class="flex absolute top-4 right-4 justify-center items-center w-8 h-8 rounded-full">
+<iconify-icon id="24:210" orderindex="80" style="color: rgba(255, 255, 255, 1);" icon="lucide:heart" class="text-sm"></iconify-icon>
+</button>
+<div id="47:120" orderindex="82" class="absolute top-4 left-4"><span id="47:121" orderindex="80" style="background-color: oklch( 62.7% 0.194 149.214 ); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.5rem;" class="text-xs font-bold rounded-full">89% Match</span></div></div>
+<div id="24:211" orderindex="81" class="p-4">
+<div id="24:212" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-lg mb-1 font-bold">₦400,000/year</div><div id="47:122" orderindex="81" class="flex items-center gap-x-2 mt-2">
+<span id="47:123" orderindex="80" style="background-color: oklch( 93.2% 0.032 255.585 ); color: oklch( 48.8% 0.243 264.376 ); padding: 0.25rem 0.5rem;" class="text-xs font-medium rounded-full">92/100</span>
+<span id="47:124" orderindex="81" style="background-color: oklch( 96.2% 0.044 156.743 ); color: oklch( 52.7% 0.154 150.069 ); padding: 0.25rem 0.5rem;" class="text-xs font-medium rounded-full">Fair Price</span>
+</div>
+<h3 id="24:213" orderindex="82" style="color: oklch( 21% 0.034 264.665 );" class="mb-2 font-semibold">Elegant 2BR Apartment</h3>
+<div id="24:214" orderindex="83" style="color: oklch( 44.6% 0.03 256.802 );" class="flex items-center mb-3">
+<iconify-icon id="24:215" orderindex="80" icon="lucide:map-pin" class="text-sm mr-1"></iconify-icon>
+<span id="24:216" orderindex="81" class="text-sm">Ikoyi, Lagos</span>
+</div>
+<div id="24:217" orderindex="84" style="color: oklch( 55.1% 0.027 264.364 );" class="text-xs mb-3">Saved 2 days ago</div>
+<button id="24:218" orderindex="85" class="hover:bg-[#032a3f] text-sm w-full font-medium rounded-lg" style="background-color: rgba(4, 50, 78, 1); color: rgba(255, 255, 255, 1); padding: 0.5rem 1rem;">
+                                        Chat with Owner
+                                    </button>
+<div id="47:125" orderindex="86" class="flex items-center mt-3">
+<input id="47:126" orderindex="80" type="checkbox" class="mr-2 rounded-sm">
+<label id="47:127" orderindex="81" style="color: oklch( 44.6% 0.03 256.802 );" class="text-xs">Compare</label>
+</div></div>
+</div>
+<div id="24:219" orderindex="81" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);" class="shrink-0 w-80 border-[1px] border-solid rounded-2xl">
+<div id="24:220" orderindex="80" class="relative">
+<img id="24:221" orderindex="80" alt="Cozy 1-bedroom apartment with modern kitchen" src="https://static.paraflowcontent.com/public/resource/image/83a12fd5-c2d1-4b64-af43-93e720825d57.jpeg" class="w-full h-44 object-cover rounded-tl-2xl rounded-tr-2xl">
+<button id="24:222" orderindex="81" style="background-color: rgba(13, 155, 106, 1);" class="flex absolute top-4 right-4 justify-center items-center w-8 h-8 rounded-full">
+<iconify-icon id="24:223" orderindex="80" style="color: rgba(255, 255, 255, 1);" icon="lucide:heart" class="text-sm"></iconify-icon>
+</button>
+<div id="47:128" orderindex="82" class="absolute top-4 left-4"><span id="47:129" orderindex="80" style="background-color: oklch( 62.7% 0.194 149.214 ); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.5rem;" class="text-xs font-bold rounded-full">87% Match</span></div></div>
+<div id="24:224" orderindex="81" class="p-4">
+<div id="24:225" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-lg mb-1 font-bold">₦250,000/year</div><div id="47:130" orderindex="81" class="flex items-center gap-x-2 mt-2">
+<span id="47:131" orderindex="80" style="background-color: oklch( 93.2% 0.032 255.585 ); color: oklch( 48.8% 0.243 264.376 ); padding: 0.25rem 0.5rem;" class="text-xs font-medium rounded-full">88/100</span>
+<span id="47:132" orderindex="81" style="background-color: oklch( 96.2% 0.044 156.743 ); color: oklch( 52.7% 0.154 150.069 ); padding: 0.25rem 0.5rem;" class="text-xs font-medium rounded-full">15% Below Market</span>
+</div>
+<h3 id="24:226" orderindex="82" style="color: oklch( 21% 0.034 264.665 );" class="mb-2 font-semibold">Cozy 1BR Apartment</h3>
+<div id="24:227" orderindex="83" style="color: oklch( 44.6% 0.03 256.802 );" class="flex items-center mb-3">
+<iconify-icon id="24:228" orderindex="80" icon="lucide:map-pin" class="text-sm mr-1"></iconify-icon>
+<span id="24:229" orderindex="81" class="text-sm">Surulere, Lagos</span>
+</div>
+<div id="24:230" orderindex="84" style="color: oklch( 55.1% 0.027 264.364 );" class="text-xs mb-3">Saved 5 days ago</div>
+<button id="24:231" orderindex="85" class="hover:bg-[#032a3f] text-sm w-full font-medium rounded-lg" style="background-color: rgba(4, 50, 78, 1); color: rgba(255, 255, 255, 1); padding: 0.5rem 1rem;">
+                                        Chat with Owner
+                                    </button>
+<div id="47:133" orderindex="86" class="flex items-center mt-3">
+<input id="47:134" orderindex="80" type="checkbox" class="mr-2 rounded-sm">
+<label id="47:135" orderindex="81" style="color: oklch( 44.6% 0.03 256.802 );" class="text-xs">Compare</label>
+</div></div>
+</div>
+<div id="24:232" orderindex="82" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);" class="shrink-0 w-80 border-[1px] border-solid rounded-2xl">
+<div id="24:233" orderindex="80" class="relative">
+<img id="24:234" orderindex="80" alt="Furnished shortlet with swimming pool and WiFi" src="https://static.paraflowcontent.com/public/resource/image/b7873255-88a2-48a6-8283-591227f0fc63.jpeg" class="w-full h-44 object-cover rounded-tl-2xl rounded-tr-2xl">
+<button id="24:235" orderindex="81" style="background-color: rgba(13, 155, 106, 1);" class="flex absolute top-4 right-4 justify-center items-center w-8 h-8 rounded-full">
+<iconify-icon id="24:236" orderindex="80" style="color: rgba(255, 255, 255, 1);" icon="lucide:heart" class="text-sm"></iconify-icon>
+</button>
+<div id="47:136" orderindex="82" class="absolute top-4 left-4"><span id="47:137" orderindex="80" style="background-color: oklch( 62.7% 0.194 149.214 ); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.5rem;" class="text-xs font-bold rounded-full">85% Match</span></div></div>
+<div id="24:237" orderindex="81" class="p-4">
+<div id="24:238" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-lg mb-1 font-bold">₦18,000/night</div><div id="47:138" orderindex="81" class="flex items-center gap-x-2 mt-2">
+<span id="47:139" orderindex="80" style="background-color: oklch( 93.2% 0.032 255.585 ); color: oklch( 48.8% 0.243 264.376 ); padding: 0.25rem 0.5rem;" class="text-xs font-medium rounded-full">95/100</span>
+<span id="47:140" orderindex="81" style="background-color: oklch( 96.2% 0.044 156.743 ); color: oklch( 52.7% 0.154 150.069 ); padding: 0.25rem 0.5rem;" class="text-xs font-medium rounded-full">Fair Price</span>
+</div>
+<h3 id="24:239" orderindex="82" style="color: oklch( 21% 0.034 264.665 );" class="mb-2 font-semibold">Furnished Shortlet</h3>
+<div id="24:240" orderindex="83" style="color: oklch( 44.6% 0.03 256.802 );" class="flex items-center mb-3">
+<iconify-icon id="24:241" orderindex="80" icon="lucide:map-pin" class="text-sm mr-1"></iconify-icon>
+<span id="24:242" orderindex="81" class="text-sm">Lekki Phase 2, Lagos</span>
+</div>
+<div id="24:243" orderindex="84" style="color: oklch( 55.1% 0.027 264.364 );" class="text-xs mb-3">Saved 1 week ago</div>
+<button id="24:244" orderindex="85" class="hover:bg-[#032a3f] text-sm w-full font-medium rounded-lg" style="background-color: rgba(4, 50, 78, 1); color: rgba(255, 255, 255, 1); padding: 0.5rem 1rem;">
+                                        Chat with Owner
+                                    </button>
+<div id="47:141" orderindex="86" class="flex items-center mt-3">
+<input id="47:142" orderindex="80" type="checkbox" class="mr-2 rounded-sm">
+<label id="47:143" orderindex="81" style="color: oklch( 44.6% 0.03 256.802 );" class="text-xs">Compare</label>
+</div></div>
+</div>
+</div>
+</div>
+</section>
+<section id="24:245" orderindex="82">
+<h2 id="24:246" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-2xl mb-6 font-bold">Recent Activity</h2>
+<div id="24:247" orderindex="81" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);" class="p-6 border-[1px] border-solid rounded-2xl">
+<div id="47:144" orderindex="80" class="p-6">
+<div id="47:145" orderindex="80" style="background-color: oklch( 97% 0.014 254.604 );" class="mb-6 p-4 border-[1px] border-solid rounded-lg">
+<div id="47:146" orderindex="80" class="flex items-center gap-x-2 mb-2">
+<iconify-icon id="47:147" orderindex="80" style="color: oklch( 54.6% 0.245 262.881 );" icon="lucide:brain"></iconify-icon>
+<span id="47:148" orderindex="81" style="color: oklch( 37.9% 0.146 265.522 );" class="font-medium">AI Insights from Your Activity</span>
+</div>
+<div id="47:149" orderindex="81" style="color: oklch( 48.8% 0.243 264.376 );" class="text-sm">
+<div id="47:150" orderindex="80" style="margin-top: 0;" class="mb-1">• You viewed 3 properties in Lekki yesterday</div>
+<div id="47:151" orderindex="81" style="margin-top: 0;" class="mb-1">• AI noticed: You prefer properties with generator backup</div>
+<div id="47:152" orderindex="82">• Recommendation: Expand search to Victoria Island (similar prices, 92% match potential)</div>
+</div>
+</div>
+<div id="47:153" orderindex="81">
+<div id="47:154" orderindex="80" style="margin-top: 0;" class="flex items-start gap-x-4 mb-4">
+<div id="47:155" orderindex="80" style="background-color: oklch( 93.2% 0.032 255.585 );" class="flex shrink-0 justify-center items-center w-10 h-10 rounded-lg">
+<iconify-icon id="47:156" orderindex="80" style="color: oklch( 54.6% 0.245 262.881 );" icon="lucide:eye"></iconify-icon>
+</div>
+<div id="47:157" orderindex="81" style="flex-basis: 0%;" class="grow shrink">
+<p id="47:158" orderindex="80" style="color: oklch( 21% 0.034 264.665 );" class="font-medium">Viewed property: "Modern 3BR Apartment" in Lekki Phase 1</p>
+<p id="47:159" orderindex="81" style="color: oklch( 55.1% 0.027 264.364 );" class="text-sm">2 hours ago</p>
+</div>
+<button id="47:160" orderindex="82" class="hover:text-green-700 text-sm font-medium" style="color: oklch( 62.7% 0.194 149.214 );">View Again</button>
+</div>
+<div id="47:161" orderindex="81" style="margin-top: 0;" class="flex items-start gap-x-4 mb-4">
+<div id="47:162" orderindex="80" style="background-color: oklch( 96.2% 0.044 156.743 );" class="flex shrink-0 justify-center items-center w-10 h-10 rounded-lg">
+<iconify-icon id="47:163" orderindex="80" style="color: oklch( 62.7% 0.194 149.214 );" icon="lucide:heart"></iconify-icon>
+</div>
+<div id="47:164" orderindex="81" style="flex-basis: 0%;" class="grow shrink">
+<p id="47:165" orderindex="80" style="color: oklch( 21% 0.034 264.665 );" class="font-medium">Saved property: "Luxury 2BR Apartment"</p>
+<p id="47:166" orderindex="81" style="color: oklch( 55.1% 0.027 264.364 );" class="text-sm">Yesterday</p>
+</div>
+<button id="47:167" orderindex="82" class="hover:text-green-700 text-sm font-medium" style="color: oklch( 62.7% 0.194 149.214 );">Open Chat</button>
+</div>
+<div id="47:168" orderindex="82" class="flex items-start gap-x-4">
+<div id="47:169" orderindex="80" style="background-color: oklch( 94.6% 0.033 307.174 );" class="flex shrink-0 justify-center items-center w-10 h-10 rounded-lg">
+<iconify-icon id="47:170" orderindex="80" style="color: oklch( 55.8% 0.288 302.321 );" icon="lucide:message-circle"></iconify-icon>
+</div>
+<div id="47:171" orderindex="81" style="flex-basis: 0%;" class="grow shrink">
+<p id="47:172" orderindex="80" style="color: oklch( 21% 0.034 264.665 );" class="font-medium">Message received: From John Adebayo about "Spacious 3BR House"</p>
+<p id="47:173" orderindex="81" style="color: oklch( 55.1% 0.027 264.364 );" class="text-sm">3 days ago</p>
+</div>
+<button id="47:174" orderindex="82" class="hover:text-green-700 text-sm font-medium" style="color: oklch( 62.7% 0.194 149.214 );">Reply</button>
+</div>
+</div>
+<div id="47:175" orderindex="82" class="text-center mt-6">
+<a id="47:176" orderindex="80" class="hover:text-green-700 font-medium" style="color: oklch( 62.7% 0.194 149.214 );" href="#">View Full Activity History</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div id="24:286" orderindex="81" style="grid-column-start: span 1; grid-column-end: span 1;"><div id="47:177" orderindex="80" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);" class="mb-6 p-6 border-[1px] border-solid rounded-2xl">
+<div id="47:178" orderindex="80" class="flex items-center gap-x-2 mb-6">
+<iconify-icon id="47:179" orderindex="80" style="color: oklch( 62.7% 0.194 149.214 );" icon="lucide:brain" class="text-xl"></iconify-icon>
+<h3 id="47:180" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="text-lg font-semibold">Your Search Intelligence</h3>
+</div>
+<div id="47:181" orderindex="81" class="grid grid-cols-2 gap-y-4 gap-x-4">
+<div id="47:182" orderindex="80" class="text-center">
+<div id="47:183" orderindex="80" style="color: oklch( 62.7% 0.194 149.214 );" class="text-2xl mb-1 font-bold">65%</div>
+<div id="47:184" orderindex="81" style="color: oklch( 44.6% 0.03 256.802 );" class="text-xs mb-2">Faster</div>
+<div id="47:185" orderindex="82" style="background-color: oklch( 92.8% 0.006 264.531 );" class="w-full h-2 rounded-full">
+<div id="47:186" orderindex="80" style="background-color: oklch( 62.7% 0.194 149.214 ); width: 65%;" class="h-2 rounded-full"></div>
+</div>
+<div id="47:187" orderindex="83" style="color: oklch( 55.1% 0.027 264.364 );" class="text-xs mt-1">vs avg users</div>
+</div>
+<div id="47:188" orderindex="81" class="text-center">
+<div id="47:189" orderindex="80" style="color: oklch( 54.6% 0.245 262.881 );" class="text-2xl mb-1 font-bold">78</div>
+<div id="47:190" orderindex="81" style="color: oklch( 44.6% 0.03 256.802 );" class="text-xs mb-2">Trust Score</div>
+<div id="47:191" orderindex="82" style="background-color: oklch( 92.8% 0.006 264.531 );" class="w-full h-2 rounded-full">
+<div id="47:192" orderindex="80" style="background-color: oklch( 54.6% 0.245 262.881 ); width: 78%;" class="h-2 rounded-full"></div>
+</div>
+<div id="47:193" orderindex="83" style="color: oklch( 62.7% 0.194 149.214 );" class="text-xs mt-1">+5 this month</div>
+</div>
+<div id="47:194" orderindex="82" class="text-center">
+<div id="47:195" orderindex="80" style="color: oklch( 55.8% 0.288 302.321 );" class="text-xl mb-1 font-bold">₦520k</div>
+<div id="47:196" orderindex="81" style="color: oklch( 44.6% 0.03 256.802 );" class="text-xs mb-2">Optimal Budget</div>
+<div id="47:197" orderindex="82" style="color: oklch( 55.1% 0.027 264.364 );" class="text-xs">₦480k-₦560k range</div>
+</div>
+<div id="47:198" orderindex="83" class="text-center">
+<div id="47:199" orderindex="80" style="color: oklch( 64.6% 0.222 41.116 );" class="text-2xl mb-1 font-bold">89%</div>
+<div id="47:200" orderindex="81" style="color: oklch( 44.6% 0.03 256.802 );" class="text-xs mb-2">Avg Match</div>
+<div id="47:201" orderindex="82" style="color: oklch( 55.1% 0.027 264.364 );" class="text-xs">Clear preferences</div>
+</div>
+</div>
+</div>
+<div id="47:202" orderindex="81" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);" class="mb-6 p-6 border-[1px] border-solid rounded-2xl">
+<div id="47:203" orderindex="80" class="text-center">
+<div id="47:204" orderindex="80" style="margin-right: auto; margin-left: auto;" class="relative w-20 h-20 mb-4">
+<div id="47:205" orderindex="80" style="background-color: oklch( 97.3% 0.071 103.193 );" class="flex justify-center items-center w-20 h-20 border-[4px] border-solid rounded-full">
+<iconify-icon id="47:206" orderindex="80" style="color: oklch( 68.1% 0.162 75.834 );" icon="lucide:shield" class="text-2xl"></iconify-icon>
+</div>
+<div id="47:207" orderindex="81" style="top: 0; right: 0; bottom: 0; left: 0;" class="flex absolute justify-center items-center">
+<span id="47:208" orderindex="80" style="color: oklch( 55.4% 0.135 66.442 );" class="text-lg font-bold">78</span>
+</div>
+</div>
+<div id="47:209" orderindex="81" class="mb-4">
+<div id="47:210" orderindex="80" class="flex justify-between items-center mb-2">
+<span id="47:211" orderindex="80" style="color: oklch( 44.6% 0.03 256.802 );" class="text-sm">Good</span>
+<span id="47:212" orderindex="81" style="color: oklch( 44.6% 0.03 256.802 );" class="text-sm">Excellent (80)</span>
+</div>
+<div id="47:213" orderindex="81" style="background-color: oklch( 92.8% 0.006 264.531 );" class="w-full h-3 rounded-full">
+<div id="47:214" orderindex="80" style="background-color: oklch( 85.2% 0.199 91.936 ); width: 78%;" class="h-3 rounded-full"></div>
+</div>
+</div>
+<div id="47:215" orderindex="82" class="mb-4">
+<div id="47:216" orderindex="80" style="margin-top: 0; color: oklch( 44.6% 0.03 256.802 );" class="text-xs flex items-center mb-2">
+<iconify-icon id="47:217" orderindex="80" style="color: oklch( 62.7% 0.194 149.214 );" icon="lucide:plus" class="mr-2"></iconify-icon>
+<span id="48:10" orderindex="81">+2 points: Completed profile</span>
+</div>
+<div id="47:218" orderindex="81" style="color: oklch( 44.6% 0.03 256.802 );" class="text-xs flex items-center">
+<iconify-icon id="47:219" orderindex="80" style="color: oklch( 62.7% 0.194 149.214 );" icon="lucide:plus" class="mr-2"></iconify-icon>
+<span id="48:11" orderindex="81">+3 points: Verified phone</span>
+</div>
+</div>
+<div id="47:220" orderindex="83" style="color: oklch( 55.1% 0.027 264.364 );" class="text-xs mb-4">
+<div id="47:221" orderindex="80" class="mb-1 font-medium">Excellent tier benefits:</div>
+<div id="47:222" orderindex="81">• Priority landlord responses</div>
+<div id="47:223" orderindex="82">• Premium property access</div>
+<div id="47:224" orderindex="83">• Featured in searches</div>
+</div>
+</div>
+</div><div id="47:225" orderindex="82" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);" class="mb-6 p-6 border-[1px] border-solid rounded-2xl">
+<div id="47:226" orderindex="80" class="flex justify-between items-center mb-4">
+<h3 id="47:227" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-lg font-semibold">Compare Saved Properties</h3>
+<iconify-icon id="47:228" orderindex="81" style="color: oklch( 62.7% 0.194 149.214 );" icon="lucide:sparkles"></iconify-icon>
+</div>
+<div id="47:229" orderindex="81" class="text-xs">
+<div id="47:230" orderindex="80" style="margin-top: 0; color: oklch( 37.3% 0.034 259.733 ); border-bottom-style: solid;" class="grid grid-cols-4 gap-x-2 mb-3 pb-2 border-b-[1px] font-medium">
+<div id="47:231" orderindex="80">Property</div>
+<div id="47:232" orderindex="81">Price</div>
+<div id="47:233" orderindex="82">Trust</div>
+<div id="47:234" orderindex="83">Match</div>
+</div>
+<div id="47:235" orderindex="81" style="margin-top: 0; color: oklch( 44.6% 0.03 256.802 );" class="grid grid-cols-4 gap-x-2 mb-3">
+<div id="47:236" orderindex="80" class="overflow-x-hidden overflow-y-hidden text-ellipsis whitespace-nowrap">Modern 3BR</div>
+<div id="47:237" orderindex="81">₦550k</div>
+<div id="47:238" orderindex="82" style="color: oklch( 62.7% 0.194 149.214 );">92/100</div>
+<div id="47:239" orderindex="83" style="color: oklch( 62.7% 0.194 149.214 );">89%</div>
+</div>
+<div id="47:240" orderindex="82" style="margin-top: 0; color: oklch( 44.6% 0.03 256.802 );" class="grid grid-cols-4 gap-x-2 mb-3">
+<div id="47:241" orderindex="80" class="overflow-x-hidden overflow-y-hidden text-ellipsis whitespace-nowrap">Luxury 2BR</div>
+<div id="47:242" orderindex="81">₦480k</div>
+<div id="47:243" orderindex="82" style="color: oklch( 54.6% 0.245 262.881 );">88/100</div>
+<div id="47:244" orderindex="83" style="color: oklch( 54.6% 0.245 262.881 );">87%</div>
+</div>
+<div id="47:245" orderindex="83" style="color: oklch( 44.6% 0.03 256.802 );" class="grid grid-cols-4 gap-x-2">
+<div id="47:246" orderindex="80" class="overflow-x-hidden overflow-y-hidden text-ellipsis whitespace-nowrap">Spacious 3BR</div>
+<div id="47:247" orderindex="81">₦580k</div>
+<div id="47:248" orderindex="82" style="color: oklch( 62.7% 0.194 149.214 );">95/100</div>
+<div id="47:249" orderindex="83" style="color: oklch( 62.7% 0.194 149.214 );">85%</div>
+</div>
+</div>
+<button id="47:250" orderindex="82" class="hover:bg-gray-200 text-sm flex justify-center items-center gap-x-2 w-full mt-4 pt-2 pb-2 font-medium rounded-lg" style="background-color: oklch( 96.7% 0.003 264.542 ); color: oklch( 37.3% 0.034 259.733 );">
+<iconify-icon id="47:251" orderindex="80" icon="lucide:bar-chart-3"></iconify-icon>
+<span id="48:12" orderindex="81">View Full Comparison</span>
+</button>
+</div><div id="47:252" orderindex="83" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);" class="mb-6 p-6 border-[1px] border-solid rounded-2xl">
+<div id="47:253" orderindex="80" class="flex justify-between items-center mb-4">
+<h3 id="47:254" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-lg font-semibold">AI Conversation Intelligence</h3>
+<span id="47:255" orderindex="81" style="background-color: oklch( 93.2% 0.032 255.585 ); color: oklch( 48.8% 0.243 264.376 ); padding: 0.25rem 0.5rem;" class="text-xs rounded-full">3 Active</span>
+</div>
+<div id="47:256" orderindex="81">
+<div id="47:257" orderindex="80" style="background-color: oklch( 98.2% 0.018 155.826 ); margin-top: 0;" class="mb-3 p-3 border-[1px] border-solid rounded-lg">
+<div id="47:258" orderindex="80" class="flex justify-between items-center mb-1">
+<span id="47:259" orderindex="80" style="color: oklch( 44.8% 0.119 151.328 );" class="text-sm font-medium"><span id="48:13" orderindex="80">Mr.</span>
+<span id="47:260" orderindex="81" style="color: oklch( 39.3% 0.095 152.535 );" class="text-sm font-medium">Mr. Adebayo</span>
+<span id="47:261" orderindex="82" style="background-color: oklch( 62.7% 0.194 149.214 ); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.5rem;" class="text-xs rounded-full">92/100</span>
+</span></div>
+<div id="47:262" orderindex="81" style="color: oklch( 52.7% 0.154 150.069 );" class="text-xs">High Quality Lead</div>
+</div>
+<div id="47:263" orderindex="81" style="background-color: oklch( 97% 0.014 254.604 ); margin-top: 0;" class="mb-3 p-3 border-[1px] border-solid rounded-lg">
+<div id="47:264" orderindex="80" style="color: oklch( 37.9% 0.146 265.522 );" class="text-sm mb-1 font-medium">Victoria Gardens</div>
+<div id="47:265" orderindex="81" style="color: oklch( 48.8% 0.243 264.376 );" class="text-xs">Response expected in 2 hours</div>
+</div>
+<div id="47:266" orderindex="82" style="background-color: oklch( 98% 0.016 73.684 );" class="p-3 border-[1px] border-solid rounded-lg">
+<div id="47:267" orderindex="80" class="flex justify-between items-center mb-1">
+<span id="47:268" orderindex="80" style="color: oklch( 40.8% 0.123 38.172 );" class="text-sm font-medium">Lekki Apartment</span>
+<span id="47:269" orderindex="81" style="background-color: oklch( 64.6% 0.222 41.116 ); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.5rem;" class="text-xs rounded-full">45%</span>
+</div>
+<div id="47:270" orderindex="81" style="color: oklch( 55.3% 0.195 38.402 );" class="text-xs">Low match - Consider other options</div>
+</div>
+</div>
+<button id="47:271" orderindex="82" class="hover:bg-green-700 text-sm w-full mt-4 pt-2 pb-2 font-medium rounded-lg" style="background-color: oklch( 62.7% 0.194 149.214 ); color: rgba(255, 255, 255, 1);">
+    View All Chats
+  </button>
+</div><div id="24:287" orderindex="84" style="background-color: rgba(255, 255, 255, 1); margin-top: 0; box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);" class="mb-8 p-6 border-[1px] border-solid rounded-2xl">
+<h3 id="47:272" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-lg mb-6 font-semibold">Search Insights (AI-Enhanced)</h3>
+<div id="47:273" orderindex="81" class="mb-6">
+<div id="47:274" orderindex="80" class="flex justify-between items-center mb-4">
+<span id="47:275" orderindex="80" style="color: oklch( 44.6% 0.03 256.802 );">Total properties viewed</span>
+<span id="47:276" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="font-semibold">127</span>
+</div>
+<div id="47:277" orderindex="81" class="flex justify-between items-center mb-4">
+<span id="47:278" orderindex="80" style="color: oklch( 44.6% 0.03 256.802 );">Properties saved</span>
+<span id="47:279" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="font-semibold">12</span>
+</div>
+<div id="47:280" orderindex="82" class="flex justify-between items-center mb-4">
+<span id="47:281" orderindex="80" style="color: oklch( 44.6% 0.03 256.802 );">Active conversations</span>
+<span id="47:282" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="font-semibold">5</span>
+</div>
+<div id="47:283" orderindex="83" class="flex justify-between items-center">
+<span id="47:284" orderindex="80" style="color: oklch( 44.6% 0.03 256.802 );">Average response time</span>
+<span id="47:285" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="font-semibold">2 hours</span>
+</div>
+</div>
+<div id="47:286" orderindex="82" style="border-top-style: solid;" class="pt-6 border-t-[1px]">
+<h4 id="47:287" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="mb-4 font-medium">AI Analysis</h4>
+<div id="47:288" orderindex="81" class="text-sm">
+<div id="47:289" orderindex="80" style="background-color: oklch( 97% 0.014 254.604 ); margin-top: 0;" class="mb-3 p-3 rounded-lg">
+<div id="47:290" orderindex="80" style="color: oklch( 37.9% 0.146 265.522 );" class="mb-1 font-medium">Search Pattern</div>
+<div id="47:291" orderindex="81" style="color: oklch( 48.8% 0.243 264.376 );">You search most during evenings (7-10pm)</div>
+</div>
+<div id="47:292" orderindex="81" style="background-color: oklch( 98.2% 0.018 155.826 ); margin-top: 0;" class="mb-3 p-3 rounded-lg">
+<div id="47:293" orderindex="80" style="color: oklch( 39.3% 0.095 152.535 );" class="mb-1 font-medium">Top Preferences</div>
+<div id="47:294" orderindex="81" style="color: oklch( 52.7% 0.154 150.069 );">Lekki (40%), Generator backup (85%), High trust (90%)</div>
+</div>
+<div id="47:295" orderindex="82" style="background-color: oklch( 97.7% 0.014 308.299 );" class="p-3 rounded-lg">
+<div id="47:296" orderindex="80" style="color: oklch( 38.1% 0.176 304.987 );" class="mb-1 font-medium">Budget Comfort Zone</div>
+<div id="47:297" orderindex="81" style="color: oklch( 49.6% 0.265 301.924 );">₦480k-₦560k/year</div>
+</div>
+</div>
+</div>
+</div>
+<div id="24:315" orderindex="85" style="background-color: rgba(255, 255, 255, 1); margin-top: 0; box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);" class="mb-8 p-6 border-[1px] border-solid rounded-2xl">
+<h3 id="47:298" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-lg mb-6 font-semibold">Quick Actions (AI-Powered)</h3>
+<div id="47:299" orderindex="81">
+<button id="47:300" orderindex="80" class="hover:bg-gray-50 text-left flex items-center gap-x-3 w-full mb-4 p-4 border-[1px] border-solid rounded-lg">
+<div id="47:301" orderindex="80" style="background-color: oklch( 96.2% 0.044 156.743 );" class="flex justify-center items-center w-10 h-10 rounded-lg">
+<iconify-icon id="47:302" orderindex="80" style="color: rgba(13, 155, 106, 1);" icon="lucide:sparkles"></iconify-icon>
+</div>
+<span id="47:303" orderindex="81" style="color: oklch( 21% 0.034 264.665 );" class="font-medium">Find AI Matches</span>
+</button>
+<button id="47:304" orderindex="81" class="hover:bg-gray-50 text-left flex items-center gap-x-3 w-full mb-4 p-4 border-[1px] border-solid rounded-lg">
+<div id="47:305" orderindex="80" style="background-color: oklch( 93.2% 0.032 255.585 );" class="flex justify-center items-center w-10 h-10 rounded-lg">
+<iconify-icon id="47:306" orderindex="80" style="color: rgba(37, 99, 235, 1);" icon="lucide:brain"></iconify-icon>
+</div>
+<span id="47:307" orderindex="81" style="color: oklch( 21% 0.034 264.665 );" class="font-medium">Ask AI Assistant</span>
+</button>
+<button id="47:308" orderindex="82" class="hover:bg-gray-50 text-left flex items-center gap-x-3 w-full mb-4 p-4 border-[1px] border-solid rounded-lg">
+<div id="47:309" orderindex="80" style="background-color: oklch( 97.3% 0.071 103.193 );" class="flex justify-center items-center w-10 h-10 rounded-lg">
+<iconify-icon id="47:310" orderindex="80" style="color: rgba(202, 138, 4, 1);" icon="lucide:shield-check"></iconify-icon>
+</div>
+<span id="47:311" orderindex="81" style="color: oklch( 21% 0.034 264.665 );" class="font-medium">Trust Score Progress</span>
+</button>
+<button id="47:312" orderindex="83" class="hover:bg-gray-50 text-left flex items-center gap-x-3 w-full p-4 border-[1px] border-solid rounded-lg">
+<div id="47:313" orderindex="80" style="background-color: oklch( 94.6% 0.033 307.174 );" class="flex justify-center items-center w-10 h-10 rounded-lg">
+<iconify-icon id="47:314" orderindex="80" style="color: rgba(147, 51, 234, 1);" icon="lucide:bar-chart-3"></iconify-icon>
+</div>
+<span id="47:315" orderindex="81" style="color: oklch( 21% 0.034 264.665 );" class="font-medium">Compare Properties (AI)</span>
+</button>
+</div>
+</div>
+<div id="24:335" orderindex="86" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);" class="p-6 border-[1px] border-solid rounded-2xl">
+<div id="24:336" orderindex="80" class="flex justify-between items-center mb-6">
+<h3 id="24:337" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-lg font-semibold">Active Conversations</h3>
+<a id="24:338" orderindex="81" class="hover:text-[#0a8659] text-sm font-medium" style="color: rgba(13, 155, 106, 1);" href="#">View All</a>
+</div>
+<div id="24:339" orderindex="81">
+<div id="24:340" orderindex="80" class="hover:bg-gray-50 flex items-start gap-x-3 mb-4 p-4 border-[1px] border-solid rounded-lg" style="margin-top: 0;">
+<img id="24:341" orderindex="80" alt="Property thumbnail of modern apartment interior" src="https://static.paraflowcontent.com/public/resource/image/fb58f605-3b36-48ca-b860-82b4036a21c7.jpeg" class="w-12 h-12 object-cover rounded-lg">
+<div id="24:342" orderindex="81" style="flex-basis: 0%; min-width: 0;" class="grow shrink">
+<div id="24:343" orderindex="80" class="flex items-center gap-x-2 mb-1">
+<h4 id="24:344" orderindex="80" style="color: oklch( 21% 0.034 264.665 );" class="text-sm font-medium">Modern 3BR Apartment</h4>
+<span id="24:345" orderindex="81" style="background-color: rgba(13, 155, 106, 1); color: rgba(255, 255, 255, 1); padding: 0.125rem 0.25rem;" class="text-xs flex items-center gap-x-1 rounded-full">
+<iconify-icon id="24:346" orderindex="80" icon="lucide:shield-check" class="text-xs"></iconify-icon>
+</span>
+</div>
+<p id="24:347" orderindex="81" style="color: oklch( 55.1% 0.027 264.364 );" class="text-xs mb-2">John Adebayo</p>
+<p id="24:348" orderindex="82" style="color: oklch( 44.6% 0.03 256.802 );" class="text-xs overflow-x-hidden overflow-y-hidden text-ellipsis whitespace-nowrap">Hello! The property is still available...</p>
+<p id="24:349" orderindex="83" style="color: oklch( 70.7% 0.022 261.325 );" class="text-xs mt-1">2 hours ago</p>
+</div>
+<div id="24:350" orderindex="82" style="background-color: rgba(13, 155, 106, 1);" class="w-3 h-3 rounded-full"></div>
+</div>
+<div id="24:351" orderindex="81" class="hover:bg-gray-50 flex items-start gap-x-3 mb-4 p-4 border-[1px] border-solid rounded-lg" style="margin-top: 0;">
+<img id="24:352" orderindex="80" alt="Property thumbnail of elegant house exterior" src="https://static.paraflowcontent.com/public/resource/image/74906308-d17a-4824-820c-aab977293b77.jpeg" class="w-12 h-12 object-cover rounded-lg">
+<div id="24:353" orderindex="81" style="flex-basis: 0%; min-width: 0;" class="grow shrink">
+<div id="24:354" orderindex="80" class="flex items-center gap-x-2 mb-1">
+<h4 id="24:355" orderindex="80" style="color: oklch( 21% 0.034 264.665 );" class="text-sm font-medium">Spacious 3BR House</h4>
+<span id="24:356" orderindex="81" style="background-color: rgba(13, 155, 106, 1); color: rgba(255, 255, 255, 1); padding: 0.125rem 0.25rem;" class="text-xs flex items-center gap-x-1 rounded-full">
+<iconify-icon id="24:357" orderindex="80" icon="lucide:shield-check" class="text-xs"></iconify-icon>
+</span>
+</div>
+<p id="24:358" orderindex="81" style="color: oklch( 55.1% 0.027 264.364 );" class="text-xs mb-2">Maria Santos</p>
+<p id="24:359" orderindex="82" style="color: oklch( 44.6% 0.03 256.802 );" class="text-xs overflow-x-hidden overflow-y-hidden text-ellipsis whitespace-nowrap">Thanks for your interest. When would...</p>
+<p id="24:360" orderindex="83" style="color: oklch( 70.7% 0.022 261.325 );" class="text-xs mt-1">1 day ago</p>
+</div>
+</div>
+<div id="24:361" orderindex="82" class="hover:bg-gray-50 flex items-start gap-x-3 p-4 border-[1px] border-solid rounded-lg">
+<img id="24:362" orderindex="80" alt="Property thumbnail of furnished studio apartment" src="https://static.paraflowcontent.com/public/resource/image/6e216386-3fae-432e-acdf-2ca920a7577b.jpeg" class="w-12 h-12 object-cover rounded-lg">
+<div id="24:363" orderindex="81" style="flex-basis: 0%; min-width: 0;" class="grow shrink">
+<div id="24:364" orderindex="80" class="flex items-center gap-x-2 mb-1">
+<h4 id="24:365" orderindex="80" style="color: oklch( 21% 0.034 264.665 );" class="text-sm font-medium">Furnished Shortlet</h4>
+<span id="24:366" orderindex="81" style="background-color: rgba(13, 155, 106, 1); color: rgba(255, 255, 255, 1); padding: 0.125rem 0.25rem;" class="text-xs flex items-center gap-x-1 rounded-full">
+<iconify-icon id="24:367" orderindex="80" icon="lucide:shield-check" class="text-xs"></iconify-icon>
+</span>
+</div>
+<p id="24:368" orderindex="81" style="color: oklch( 55.1% 0.027 264.364 );" class="text-xs mb-2">David Okafor</p>
+<p id="24:369" orderindex="82" style="color: oklch( 44.6% 0.03 256.802 );" class="text-xs overflow-x-hidden overflow-y-hidden text-ellipsis whitespace-nowrap">The apartment comes fully furnished...</p>
+<p id="24:370" orderindex="83" style="color: oklch( 70.7% 0.022 261.325 );" class="text-xs mt-1">3 days ago</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="24:371" orderindex="83" class="mt-12">
+<h2 id="24:372" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-2xl mb-6 font-bold">Tips for Your Search</h2>
+<div id="24:373" orderindex="81" class="grid grid-cols-4 gap-y-6 gap-x-6">
+<div id="24:374" orderindex="80" class="hover:shadow-lg p-6 border-[1px] border-solid rounded-2xl" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);">
+<div id="24:375" orderindex="80" style="background-color: oklch( 93.6% 0.032 17.717 );" class="flex justify-center items-center w-12 h-12 mb-4 rounded-lg">
+<iconify-icon id="24:376" orderindex="80" style="color: oklch( 57.7% 0.245 27.325 );" icon="lucide:shield-alert" class="text-xl"></iconify-icon>
+</div>
+<h3 id="24:377" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="mb-3 font-semibold">How to Spot Scams</h3>
+<p id="24:378" orderindex="82" style="color: oklch( 44.6% 0.03 256.802 );" class="text-sm mb-4">Learn the warning signs and protect yourself from fraudulent listings.</p>
+<a id="24:379" orderindex="83" class="hover:text-[#0a8659] text-sm font-medium" style="color: rgba(13, 155, 106, 1);" href="#">Learn More</a>
+</div>
+<div id="24:380" orderindex="81" class="hover:shadow-lg p-6 border-[1px] border-solid rounded-2xl" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);">
+<div id="24:381" orderindex="80" style="background-color: oklch( 93.2% 0.032 255.585 );" class="flex justify-center items-center w-12 h-12 mb-4 rounded-lg">
+<iconify-icon id="24:382" orderindex="80" style="color: oklch( 54.6% 0.245 262.881 );" icon="lucide:help-circle" class="text-xl"></iconify-icon>
+</div>
+<h3 id="24:383" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="mb-3 font-semibold">Questions to Ask Landlords</h3>
+<p id="24:384" orderindex="82" style="color: oklch( 44.6% 0.03 256.802 );" class="text-sm mb-4">Essential questions to ask before viewing or renting a property.</p>
+<a id="24:385" orderindex="83" class="hover:text-[#0a8659] text-sm font-medium" style="color: rgba(13, 155, 106, 1);" href="#">View Checklist</a>
+</div>
+<div id="24:386" orderindex="82" class="hover:shadow-lg p-6 border-[1px] border-solid rounded-2xl" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);">
+<div id="24:387" orderindex="80" style="background-color: oklch( 96.2% 0.044 156.743 );" class="flex justify-center items-center w-12 h-12 mb-4 rounded-lg">
+<iconify-icon id="24:388" orderindex="80" style="color: oklch( 62.7% 0.194 149.214 );" icon="lucide:file-text" class="text-xl"></iconify-icon>
+</div>
+<h3 id="24:389" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="mb-3 font-semibold">Understanding Rent Agreements</h3>
+<p id="24:390" orderindex="82" style="color: oklch( 44.6% 0.03 256.802 );" class="text-sm mb-4">Know your rights and responsibilities in rental agreements.</p>
+<a id="24:391" orderindex="83" class="hover:text-[#0a8659] text-sm font-medium" style="color: rgba(13, 155, 106, 1);" href="#">Read Guide</a>
+</div>
+<div id="24:392" orderindex="83" class="hover:shadow-lg p-6 border-[1px] border-solid rounded-2xl" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);">
+<div id="24:393" orderindex="80" style="background-color: oklch( 94.6% 0.033 307.174 );" class="flex justify-center items-center w-12 h-12 mb-4 rounded-lg">
+<iconify-icon id="24:394" orderindex="80" style="color: oklch( 55.8% 0.288 302.321 );" icon="lucide:clipboard-check" class="text-xl"></iconify-icon>
+</div>
+<h3 id="24:395" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="mb-3 font-semibold">Moving Checklist</h3>
+<p id="24:396" orderindex="82" style="color: oklch( 44.6% 0.03 256.802 );" class="text-sm mb-4">A comprehensive checklist to make your move stress-free.</p>
+<a id="24:397" orderindex="83" class="hover:text-[#0a8659] text-sm font-medium" style="color: rgba(13, 155, 106, 1);" href="#">Download</a>
+</div>
+</div>
+</section>
+</main>
+</div>
+
+</body></html>
