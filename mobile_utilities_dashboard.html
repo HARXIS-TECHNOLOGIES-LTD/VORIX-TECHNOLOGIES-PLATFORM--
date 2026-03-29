@@ -1,0 +1,578 @@
+<!DOCTYPE html><html><head>
+    <style>@layer theme, base, paraflow, components, utilities;</style><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    
+    
+    <style id="moxt-styled">@layer paraflow{@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=PT+Serif:wght@400;700&family=Arimo:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700&;800;900&family=Rubik:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&family=Merriweather:wght@300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700&family=Libre+Baskerville:wght@400;700&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.pf-mobile-body {
+    font-family: "Poppins", sans-serif;
+}
+}</style>
+<!--FontAwesome version: 6.7.2--><link rel="stylesheet" href="https://static.paraflowcontent.com/public/css/font-awesome/font-awesome.672.css"><!--Tailwind version: 4.0.17--><script src="https://static.paraflowcontent.com/public/js/tailwind/tailwind.js"></script><!--iconify-icon version: 3.0.0--><script src="https://static.paraflowcontent.com/public/js/iconify/iconify-icon-3.0.0.js"></script></head>
+<body id="38:1" title="mobile_utilities_dashboard.html" orderindex="80" relativetransform="22540, 125" class="pf-mobile-body w-[390px] min-h-[844px]" style="background-color: rgba(248, 250, 252, 1);">
+<header id="38:2" orderindex="80" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);" class="w-full">
+<div id="80:1" orderindex="80" style="padding: 1rem 1.25rem;" class="flex justify-between items-center">
+<div id="80:2" orderindex="80" class="flex items-center gap-x-3">
+<div id="80:3" orderindex="80" style="background-color: rgba(4, 50, 78, 1);" class="flex justify-center items-center w-8 h-8 rounded-lg">
+<div id="80:4" orderindex="80" class="flex justify-center items-center w-4 h-4">
+<iconify-icon id="80:5" orderindex="80" style="color: rgba(255, 255, 255, 1);" icon="lucide:home" class="text-base"></iconify-icon>
+</div>
+</div>
+<div id="80:6" orderindex="81">
+<span id="80:7" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-lg font-bold">HAXIS</span>
+<div id="80:8" orderindex="81" class="flex items-center gap-x-1">
+<span id="80:9" orderindex="80" style="color: rgba(13, 155, 106, 1);" class="text-xs font-medium">Trust 82/100</span>
+<div id="80:10" orderindex="81" style="background-color: oklch( 92.8% 0.006 264.531 );" class="w-12 h-1 rounded-full">
+<div id="80:11" orderindex="80" style="background-color: oklch( 72.3% 0.219 149.579 );" class="w-10 h-1 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<div id="80:12" orderindex="81" class="flex items-center gap-x-2">
+<button id="80:13" orderindex="80" class="hover:bg-gray-100 flex relative justify-center items-center w-8 h-8 rounded-lg">
+<div id="80:14" orderindex="80" class="flex justify-center items-center w-4 h-4">
+<iconify-icon id="80:15" orderindex="80" style="color: rgba(4, 50, 78, 1);" icon="lucide:bell" class="text-base"></iconify-icon>
+</div>
+<span id="80:16" orderindex="81" style="background-color: rgba(220, 38, 38, 1); color: rgba(255, 255, 255, 1);" class="text-xs flex absolute -top-1 -right-1 justify-center items-center w-4 h-4 rounded-full">3</span>
+</button>
+<button id="80:17" orderindex="81" class="hover:bg-gray-100 flex relative justify-center items-center w-8 h-8 rounded-lg">
+<div id="80:18" orderindex="80" class="flex justify-center items-center w-4 h-4">
+<iconify-icon id="80:19" orderindex="80" style="color: rgba(13, 155, 106, 1);" icon="lucide:bot" class="text-base"></iconify-icon>
+</div>
+<div id="80:20" orderindex="81" style="background-color: oklch( 72.3% 0.219 149.579 );" class="absolute -top-1 -right-1 w-2 h-2 rounded-full"></div>
+</button>
+</div>
+</div></header>
+<div id="38:19" orderindex="81" style="padding: 1.5rem 1.25rem 8rem;">
+<div id="38:20" orderindex="80" class="mb-6">
+<h1 id="80:21" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-xl mb-1 font-bold">AI Utilities Hub</h1>
+<p id="80:22" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-sm">Smart insights for all your housing expenses</p></div>
+<div id="38:23" orderindex="81" class="mb-6">
+<div id="80:23" orderindex="80" style="border-left-style: solid; border-color: rgba(13, 155, 106, 1); background: linear-gradient(135deg, rgba(13, 155, 106, 0.05) 0%, rgba(4, 50, 78, 0.05) 100%);" class="mb-6 border-l-[4px] p-4 rounded-2xl">
+<div id="80:24" orderindex="80" class="flex items-center gap-x-2 mb-3">
+<iconify-icon id="80:25" orderindex="80" style="color: rgba(13, 155, 106, 1);" icon="lucide:sparkles" class="text-base"></iconify-icon>
+<h3 id="80:26" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="text-sm font-bold">AI Reminders</h3>
+</div>
+<div id="80:27" orderindex="81" style="background-color: rgba(254, 243, 199, 1); border-left-style: solid; border-color: rgba(251, 191, 36, 1);" class="mb-3 border-l-[3px] p-3 rounded-lg">
+<div id="80:28" orderindex="80" class="flex justify-between items-start">
+<div id="80:29" orderindex="80" class="flex items-start gap-x-2">
+<iconify-icon id="80:30" orderindex="80" style="margin-top: 0.125rem; color: rgba(239, 68, 68, 1);" icon="lucide:alert-triangle" class="text-base"></iconify-icon>
+<div id="80:31" orderindex="81">
+<h4 id="80:32" orderindex="80" style="color: rgba(120, 53, 15, 1);" class="text-sm font-semibold">URGENT: 2 bills due in 3 days</h4>
+<p id="80:33" orderindex="81" style="color: rgba(146, 64, 14, 1);" class="text-xs">₦15k + ₦10k = ₦25k total</p>
+<p id="80:34" orderindex="82" style="color: rgba(13, 155, 106, 1);" class="text-xs">Pay both for +2 trust points</p>
+</div>
+</div>
+<button id="80:35" orderindex="81" style="background-color: rgba(239, 68, 68, 1); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.75rem;" class="text-xs font-medium rounded-full">Pay Both</button>
+</div>
+</div>
+<div id="80:36" orderindex="82" style="background-color: rgba(254, 240, 138, 1); border-left-style: solid; border-color: rgba(251, 191, 36, 1);" class="mb-3 border-l-[3px] p-3 rounded-lg">
+<div id="80:37" orderindex="80" class="flex justify-between items-start">
+<div id="80:38" orderindex="80" class="flex items-start gap-x-2">
+<iconify-icon id="80:39" orderindex="80" style="margin-top: 0.125rem; color: rgba(251, 191, 36, 1);" icon="lucide:trending-up" class="text-base"></iconify-icon>
+<div id="80:40" orderindex="81">
+<h4 id="80:41" orderindex="80" style="color: rgba(120, 53, 15, 1);" class="text-sm font-semibold">Anomaly: 35% higher usage</h4>
+<p id="80:42" orderindex="81" style="color: rgba(146, 64, 14, 1);" class="text-xs">₦12k → ₦16.2k causes detected</p>
+</div>
+</div>
+<div id="80:43" orderindex="81" class="flex gap-x-1">
+<button id="80:44" orderindex="80" style="background-color: rgba(251, 191, 36, 1); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.5rem;" class="text-xs font-medium rounded-sm">Review</button>
+<button id="80:45" orderindex="81" style="background-color: rgba(239, 68, 68, 1); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.5rem;" class="text-xs font-medium rounded-sm">Report</button>
+</div>
+</div>
+</div>
+<div id="80:46" orderindex="83" style="background-color: rgba(219, 234, 254, 1); border-left-style: solid; border-color: rgba(59, 130, 246, 1);" class="border-l-[3px] p-3 rounded-lg">
+<div id="80:47" orderindex="80" class="flex justify-between items-start">
+<div id="80:48" orderindex="80" class="flex items-start gap-x-2">
+<iconify-icon id="80:49" orderindex="80" style="margin-top: 0.125rem; color: rgba(59, 130, 246, 1);" icon="lucide:lightbulb" class="text-base"></iconify-icon>
+<div id="80:50" orderindex="81">
+<h4 id="80:51" orderindex="80" style="color: rgba(30, 58, 138, 1);" class="text-sm font-semibold">TIP: Token expires in 5 days</h4>
+<p id="80:52" orderindex="81" style="color: rgba(55, 65, 81, 1);" class="text-xs">₦18k recommended for optimal usage</p>
+</div>
+</div>
+<button id="80:53" orderindex="81" style="background-color: rgba(59, 130, 246, 1); color: rgba(255, 255, 255, 1); padding: 0.25rem 0.75rem;" class="text-xs font-medium rounded-full">Buy Now</button>
+</div>
+</div>
+</div></div>
+<div id="38:33" orderindex="82" style="background-color: rgba(254, 243, 199, 1); border-left-style: solid; border-color: rgba(251, 191, 36, 1);" class="mb-6 border-l-[4px] p-4 rounded-lg">
+<div id="38:34" orderindex="80" class="flex justify-between items-center">
+<div id="38:35" orderindex="80" class="flex items-center gap-x-3">
+<div id="38:36" orderindex="80" class="flex justify-center items-center w-5 h-5">
+<iconify-icon id="38:37" orderindex="80" style="color: oklch( 66.6% 0.179 58.318 );" icon="lucide:alert-triangle" class="text-base"></iconify-icon>
+</div>
+<div id="38:38" orderindex="81">
+<h4 id="38:39" orderindex="80" style="color: oklch( 47.3% 0.137 46.201 );" class="text-sm font-semibold">Payment Due Soon</h4>
+<p id="38:40" orderindex="81" style="color: oklch( 55.5% 0.163 48.998 );" class="text-xs">You have 2 bills due in the next 3 days</p>
+</div>
+</div>
+<button id="38:41" orderindex="81" class="hover:text-amber-800" style="color: oklch( 66.6% 0.179 58.318 );">
+<div id="38:42" orderindex="80" class="flex justify-center items-center w-4 h-4">
+<iconify-icon id="38:43" orderindex="80" icon="lucide:x" class="text-sm"></iconify-icon>
+</div>
+</button>
+</div>
+</div>
+<div id="38:44" orderindex="83" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1); border-color: rgba(229, 231, 235, 1);" class="mb-6 p-4 border-[1px] border-solid rounded-2xl">
+<div id="80:54" orderindex="80" class="mb-4">
+<div id="80:55" orderindex="80" class="flex justify-between items-center">
+<h3 id="80:56" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-sm font-semibold">Active Property</h3>
+<button id="80:57" orderindex="81" class="hover:text-gray-600" style="color: oklch( 70.7% 0.022 261.325 );">
+<iconify-icon id="80:58" orderindex="80" icon="lucide:chevron-down" class="text-base"></iconify-icon>
+</button>
+</div>
+</div>
+<div id="80:59" orderindex="81" class="flex items-center gap-x-3 mb-3">
+<img id="80:60" orderindex="80" alt="Modern apartment building exterior with balconies" src="https://static.paraflowcontent.com/public/resource/image/6238c2b6-8295-404b-8575-4e7df588d4e6.jpeg" class="w-12 h-12 object-cover rounded-lg">
+<div id="80:61" orderindex="81" class="grow">
+<h4 id="80:62" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-sm mb-1 font-semibold">Luxury 2BR Apartment</h4>
+<div id="80:63" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="flex items-center mb-1">
+<iconify-icon id="80:64" orderindex="80" icon="lucide:map-pin" class="text-xs mr-1"></iconify-icon>
+<span id="80:65" orderindex="81" class="text-xs">Lekki Phase 1, Lagos</span>
+</div>
+<div id="80:66" orderindex="82" style="color: rgba(107, 114, 128, 1);" class="flex justify-between items-center">
+<div id="80:67" orderindex="80" class="flex items-center">
+<iconify-icon id="80:68" orderindex="80" icon="lucide:user" class="text-xs mr-1"></iconify-icon>
+<span id="80:69" orderindex="81" class="text-xs">Mr. Adebayo Williams</span>
+</div>
+<div id="80:70" orderindex="81" class="flex items-center gap-x-1">
+<span id="80:71" orderindex="80" style="color: rgba(13, 155, 106, 1);" class="text-xs font-medium">Trust 92/100</span>
+<div id="80:72" orderindex="81" style="background-color: oklch( 92.8% 0.006 264.531 );" class="w-8 h-1 rounded-full">
+<div id="80:73" orderindex="80" style="background-color: oklch( 72.3% 0.219 149.579 );" class="w-7 h-1 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="80:74" orderindex="82" class="hidden">
+<div id="80:75" orderindex="80" style="background: linear-gradient(135deg, rgba(13, 155, 106, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);" class="p-3 rounded-lg">
+<div id="80:76" orderindex="80" class="flex items-center gap-x-2 mb-2">
+<iconify-icon id="80:77" orderindex="80" style="color: rgba(13, 155, 106, 1);" icon="lucide:sparkles" class="text-sm"></iconify-icon>
+<span id="80:78" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="text-xs font-semibold">AI Property Insights</span>
+</div>
+<div id="80:79" orderindex="81" class="text-xs grid grid-cols-2 gap-y-2 gap-x-2">
+<div id="80:80" orderindex="80">
+<span id="80:81" orderindex="80" style="color: rgba(107, 114, 128, 1);">Avg Utilities</span>
+<div id="80:82" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="font-medium">₦15-18k/month</div>
+</div>
+<div id="80:83" orderindex="81">
+<span id="80:84" orderindex="80" style="color: rgba(107, 114, 128, 1);">Market Range 2BR</span>
+<div id="80:85" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="font-medium">₦12-22k</div>
+</div>
+<div id="80:86" orderindex="82">
+<span id="80:87" orderindex="80" style="color: rgba(107, 114, 128, 1);">Seasonal Peak</span>
+<div id="80:88" orderindex="81" style="color: rgba(239, 68, 68, 1);" class="font-medium">+20% Mar-May</div>
+</div>
+<div id="80:89" orderindex="83">
+<span id="80:90" orderindex="80" style="color: rgba(107, 114, 128, 1);">Efficiency</span>
+<div id="80:91" orderindex="81" style="color: rgba(13, 155, 106, 1);" class="font-medium">Above Average</div>
+</div>
+</div>
+</div>
+</div></div>
+<div id="38:58" orderindex="84" class="mb-6">
+<h2 id="80:92" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-lg flex items-center gap-x-2 mb-4 font-bold">
+<span id="81:1" orderindex="80">Quick Actions</span>
+<iconify-icon id="80:93" orderindex="81" style="color: rgba(13, 155, 106, 1);" icon="lucide:sparkles" class="text-base"></iconify-icon>
+</h2>
+<div id="80:94" orderindex="81">
+<div id="80:95" orderindex="80" class="hover:shadow-lg mb-4 p-4 border-[1px] border-solid rounded-2xl" style="margin-top: 0; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1); border-color: rgba(229, 231, 235, 1); background: linear-gradient(135deg, rgba(254, 240, 138, 0.1) 0%, rgba(255, 255, 255, 1) 100%);">
+<div id="80:96" orderindex="80" class="flex justify-between items-center mb-3">
+<div id="80:97" orderindex="80" class="flex items-center gap-x-2">
+<div id="80:98" orderindex="80" style="background-color: rgba(254, 240, 138, 1);" class="flex relative justify-center items-center w-10 h-10 rounded-lg">
+<iconify-icon id="80:99" orderindex="80" style="color: rgba(245, 158, 11, 1);" icon="lucide:zap" class="text-base"></iconify-icon>
+<iconify-icon id="80:100" orderindex="81" style="color: rgba(13, 155, 106, 1);" icon="lucide:sparkles" class="text-xs absolute -top-1 -right-1"></iconify-icon>
+</div>
+<div id="80:101" orderindex="81">
+<h3 id="80:102" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-sm font-semibold">Electricity</h3>
+<p id="80:103" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs">Meter: ••••5678</p>
+</div>
+</div>
+<div id="80:104" orderindex="81" style="background-color: rgba(220, 38, 38, 0.1); color: rgba(220, 38, 38, 1); padding: 0.25rem 0.5rem;" class="text-xs flex items-center font-medium rounded-full">
+<span id="80:105" orderindex="80">Due Soon</span>
+</div>
+</div>
+<div id="80:106" orderindex="81" class="mb-3">
+<div id="80:107" orderindex="80" style="color: rgba(239, 68, 68, 1);" class="text-sm font-bold">₦450 remaining</div>
+<div id="80:108" orderindex="81" style="color: rgba(239, 68, 68, 1);" class="text-xs">AI: 3 days left</div>
+</div>
+<div id="80:109" orderindex="82" style="background-color: rgba(219, 234, 254, 1);" class="mb-3 p-2 rounded-lg">
+<div id="80:110" orderindex="80" class="text-xs">
+<div id="80:111" orderindex="80" style="margin-top: 0; color: rgba(59, 130, 246, 1);" class="mb-1 font-medium">Last: ₦15k (Jan 5) • Suggested: ₦18k</div>
+<div id="80:112" orderindex="81" style="margin-top: 0; color: rgba(75, 85, 99, 1);" class="mb-1">Peak usage: 7-10pm (+8%)</div>
+<div id="80:113" orderindex="82" style="color: rgba(75, 85, 99, 1);">Usage trend: +12% this month</div>
+</div>
+</div>
+<button id="80:114" orderindex="83" class="hover:bg-[#0a8659] text-sm flex justify-center items-center gap-x-2 w-full font-medium p-2 rounded-lg" style="color: rgba(255, 255, 255, 1); background: linear-gradient(135deg, rgba(13, 155, 106, 1) 0%, rgba(4, 120, 87, 1) 100%);">
+<iconify-icon id="80:115" orderindex="80" icon="lucide:sparkles" class="text-sm"></iconify-icon>
+<span id="80:116" orderindex="81">Buy Token (AI)</span>
+</button>
+</div>
+<div id="80:117" orderindex="81" class="hover:shadow-lg mb-4 p-4 border-[1px] border-solid rounded-2xl" style="margin-top: 0; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1); border-color: rgba(229, 231, 235, 1); background: linear-gradient(135deg, rgba(191, 219, 254, 0.1) 0%, rgba(255, 255, 255, 1) 100%);">
+<div id="80:118" orderindex="80" class="flex justify-between items-center mb-3">
+<div id="80:119" orderindex="80" class="flex items-center gap-x-2">
+<div id="80:120" orderindex="80" style="background-color: rgba(191, 219, 254, 1);" class="flex relative justify-center items-center w-10 h-10 rounded-lg">
+<iconify-icon id="80:121" orderindex="80" style="color: rgba(59, 130, 246, 1);" icon="lucide:droplets" class="text-base"></iconify-icon>
+<iconify-icon id="80:122" orderindex="81" style="color: rgba(13, 155, 106, 1);" icon="lucide:sparkles" class="text-xs absolute -top-1 -right-1"></iconify-icon>
+</div>
+<div id="80:123" orderindex="81">
+<h3 id="80:124" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-sm font-semibold">Water Bill</h3>
+<p id="80:125" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs">Last: ₦2,500 - Dec 28</p>
+</div>
+</div>
+<div id="80:126" orderindex="81" style="background-color: rgba(251, 191, 36, 0.1); color: rgba(251, 191, 36, 1); padding: 0.25rem 0.5rem;" class="text-xs flex items-center font-medium rounded-full">
+<span id="80:127" orderindex="80">Jan 25</span>
+</div>
+</div>
+<div id="80:128" orderindex="81" class="mb-3">
+<div id="80:129" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-sm font-bold">₦2,500/month</div>
+<div id="80:130" orderindex="81" style="color: rgba(13, 155, 106, 1);" class="text-xs">AI: Consistent usage ✓</div>
+</div>
+<div id="80:131" orderindex="82" style="background-color: rgba(220, 252, 231, 1);" class="mb-3 p-2 rounded-lg">
+<div id="80:132" orderindex="80" class="text-xs">
+<div id="80:133" orderindex="80" style="margin-top: 0; color: rgba(13, 155, 106, 1);" class="mb-1 font-medium">✓ No anomalies detected</div>
+<div id="80:134" orderindex="81" style="color: rgba(75, 85, 99, 1);">Recommendation: Pay early for consistency</div>
+</div>
+</div>
+<button id="80:135" orderindex="83" class="hover:bg-[#0a8659] text-sm flex justify-center items-center w-full font-medium p-2 rounded-lg" style="background-color: rgba(13, 155, 106, 1); color: rgba(255, 255, 255, 1);">
+<span id="80:136" orderindex="80">Pay ₦2,500</span>
+</button>
+</div>
+<div id="80:137" orderindex="82" class="hover:shadow-lg mb-4 p-4 border-[1px] border-solid rounded-2xl" style="margin-top: 0; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1); border-color: rgba(229, 231, 235, 1); background: linear-gradient(135deg, rgba(233, 213, 255, 0.1) 0%, rgba(255, 255, 255, 1) 100%);">
+<div id="80:138" orderindex="80" class="flex justify-between items-center mb-3">
+<div id="80:139" orderindex="80" class="flex items-center gap-x-2">
+<div id="80:140" orderindex="80" style="background-color: rgba(233, 213, 255, 1);" class="flex relative justify-center items-center w-10 h-10 rounded-lg">
+<iconify-icon id="80:141" orderindex="80" style="color: rgba(147, 51, 234, 1);" icon="lucide:tv" class="text-base"></iconify-icon>
+<iconify-icon id="80:142" orderindex="81" style="color: rgba(13, 155, 106, 1);" icon="lucide:sparkles" class="text-xs absolute -top-1 -right-1"></iconify-icon>
+</div>
+<div id="80:143" orderindex="81">
+<h3 id="80:144" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-sm font-semibold">TV Subscription</h3>
+<p id="80:145" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs">DSTV Compact</p>
+</div>
+</div>
+<div id="80:146" orderindex="81" style="background-color: rgba(13, 155, 106, 0.1); color: rgba(13, 155, 106, 1); padding: 0.25rem 0.5rem;" class="text-xs flex items-center font-medium rounded-full">
+<span id="80:147" orderindex="80">Feb 5</span>
+</div>
+</div>
+<div id="80:148" orderindex="81" class="mb-3">
+<div id="80:149" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-sm font-bold">₦7,500/month</div>
+<div id="80:150" orderindex="81" style="color: rgba(13, 155, 106, 1);" class="text-xs">Active until Feb 5</div>
+</div>
+<div id="80:151" orderindex="82" style="background-color: rgba(254, 240, 138, 1);" class="mb-3 p-2 rounded-lg">
+<div id="80:152" orderindex="80" class="text-xs">
+<div id="80:153" orderindex="80" style="margin-top: 0; color: rgba(146, 64, 14, 1);" class="mb-1 font-medium">AI Savings: Downgrade to ₦5.5k</div>
+<div id="80:154" orderindex="81" style="color: rgba(75, 85, 99, 1);">Save ₦24k/year with Basic package</div>
+</div>
+</div>
+<div id="80:155" orderindex="83" class="flex gap-x-2">
+<button id="80:156" orderindex="80" class="hover:bg-[#032a3f] text-sm flex grow shrink justify-center items-center font-medium p-2 rounded-lg" style="background-color: rgba(4, 50, 78, 1); flex-basis: 0%; color: rgba(255, 255, 255, 1);">
+<span id="80:157" orderindex="80">Renew</span>
+</button>
+<button id="80:158" orderindex="81" class="hover:bg-[#0a8659] text-sm flex grow shrink justify-center items-center font-medium p-2 rounded-lg" style="background-color: rgba(13, 155, 106, 1); flex-basis: 0%; color: rgba(255, 255, 255, 1);">
+<span id="80:159" orderindex="80">Explore</span>
+</button>
+</div>
+</div>
+<div id="80:160" orderindex="83" class="hover:shadow-lg p-4 border-[1px] border-solid rounded-2xl" style="box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1); border-color: rgba(229, 231, 235, 1); background: linear-gradient(135deg, rgba(220, 252, 231, 0.1) 0%, rgba(255, 255, 255, 1) 100%);">
+<div id="80:161" orderindex="80" class="flex justify-between items-center mb-3">
+<div id="80:162" orderindex="80" class="flex items-center gap-x-2">
+<div id="80:163" orderindex="80" style="background-color: rgba(220, 252, 231, 1);" class="flex relative justify-center items-center w-10 h-10 rounded-lg">
+<iconify-icon id="80:164" orderindex="80" style="color: rgba(34, 197, 94, 1);" icon="lucide:building" class="text-base"></iconify-icon>
+<iconify-icon id="80:165" orderindex="81" style="color: rgba(13, 155, 106, 1);" icon="lucide:sparkles" class="text-xs absolute -top-1 -right-1"></iconify-icon>
+</div>
+<div id="80:166" orderindex="81">
+<h3 id="80:167" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-sm font-semibold">Service Charge</h3>
+<p id="80:168" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs">Monthly maintenance</p>
+</div>
+</div>
+<div id="80:169" orderindex="81" style="background-color: rgba(220, 38, 38, 0.1); color: rgba(220, 38, 38, 1); padding: 0.25rem 0.5rem;" class="text-xs flex items-center font-medium rounded-full">
+<span id="80:170" orderindex="80">Jan 25</span>
+</div>
+</div>
+<div id="80:171" orderindex="81" class="mb-3">
+<div id="80:172" orderindex="80" class="<div style=" style="color: rgba(4, 50, 78, 1);">₦10,000/month</div>
+<div id="80:173" orderindex="81" style="color: rgba(239, 68, 68, 1);" class="text-xs">Due Jan 25</div>
+</div>
+<div id="80:174" orderindex="82" style="background-color: rgba(220, 252, 231, 1);" class="mb-3 p-2 rounded-lg">
+<div id="80:175" orderindex="80" class="text-xs">
+<div id="80:176" orderindex="80" style="margin-top: 0; color: rgba(13, 155, 106, 1);" class="mb-1 font-medium">AI: ✓ Verified lease agreement</div>
+<div id="80:177" orderindex="81" style="color: rgba(75, 85, 99, 1);">No increases detected • +1 trust point</div>
+</div>
+</div>
+<button id="80:178" orderindex="83" class="hover:bg-[#0a8659] text-sm flex justify-center items-center w-full font-medium p-2 rounded-lg" style="background-color: rgba(13, 155, 106, 1); color: rgba(255, 255, 255, 1);">
+<span id="80:179" orderindex="80">Pay ₦10,000</span>
+</button>
+</div>
+</div></div>
+<div id="80:180" orderindex="85" style="box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1); border-color: rgba(229, 231, 235, 1); background: linear-gradient(135deg, rgba(13, 155, 106, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);" class="mb-6 p-4 border-[1px] border-solid rounded-2xl">
+<h3 id="80:181" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-lg flex items-center gap-x-2 mb-4 font-semibold">
+<span id="81:2" orderindex="80">Budget Calculator</span>
+<iconify-icon id="80:182" orderindex="81" style="color: rgba(13, 155, 106, 1);" icon="lucide:sparkles" class="text-base"></iconify-icon>
+</h3>
+<div id="80:183" orderindex="81" class="text-center mb-4">
+<div id="80:184" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-2xl mb-1 font-bold">₦37,500</div>
+<div id="80:185" orderindex="81" class="flex justify-center items-center gap-x-2">
+<span id="80:186" orderindex="80" style="color: rgba(34, 197, 94, 1);" class="text-sm font-medium">🟢 On Track</span>
+<span id="80:187" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-sm">+₦2.5k buffer</span>
+</div>
+</div>
+<div id="80:188" orderindex="82" style="background-color: rgba(219, 234, 254, 1);" class="mb-4 p-3 rounded-lg">
+<div id="80:189" orderindex="80" class="text-xs">
+<div id="80:190" orderindex="80" style="margin-top: 0; color: rgba(59, 130, 246, 1);" class="mb-2 font-medium">AI Recommendations:</div>
+<div id="80:191" orderindex="81" style="margin-top: 0; color: rgba(75, 85, 99, 1);" class="mb-2">• Set aside ₦18k on Jan 20 for electricity</div>
+<div id="80:192" orderindex="82" style="margin-top: 0; color: rgba(75, 85, 99, 1);" class="mb-2">• Pay all bills on Jan 24 for best rates</div>
+<div id="80:193" orderindex="83" style="border-top-style: solid; border-color: oklch( 88.2% 0.059 254.128 );" class="pt-2 border-t-[1px]">
+<div id="80:194" orderindex="80" style="color: rgba(34, 197, 94, 1);" class="font-medium">Potential Savings:</div>
+<div id="80:195" orderindex="81" style="color: rgba(75, 85, 99, 1);">TV downgrade: -₦2k + Internet bundle: -₦3.5k = ₦5.5k saved</div>
+</div>
+</div>
+</div>
+<div id="80:196" orderindex="83" class="flex gap-x-2">
+<button id="80:197" orderindex="80" class="hover:bg-[#0a8659] text-sm flex grow shrink justify-center items-center font-medium p-2 rounded-lg" style="background-color: rgba(13, 155, 106, 1); flex-basis: 0%; color: rgba(255, 255, 255, 1);">
+<span id="80:198" orderindex="80">Apply Savings</span>
+</button>
+<button id="80:199" orderindex="81" class="hover:bg-gray-50 text-sm flex grow shrink justify-center items-center font-medium p-2 border-[1px] border-solid rounded-lg" style="flex-basis: 0%; color: rgba(107, 114, 128, 1); border-color: rgba(229, 231, 235, 1);">
+<span id="80:200" orderindex="80">Set Alerts</span>
+</button>
+</div>
+</div><div id="38:117" orderindex="86" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1); border-color: rgba(229, 231, 235, 1);" class="mb-6 p-4 border-[1px] border-solid rounded-2xl">
+<h3 id="80:201" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-lg flex items-center gap-x-2 mb-4 font-semibold">
+<span id="81:3" orderindex="80">Smart Analytics</span>
+<iconify-icon id="80:202" orderindex="81" style="color: rgba(13, 155, 106, 1);" icon="lucide:sparkles" class="text-base"></iconify-icon>
+</h3>
+<div id="80:203" orderindex="81" class="text-center mb-4">
+<div id="80:204" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-2xl mb-1 font-bold">₦35,000</div>
+<div id="80:205" orderindex="81" class="flex justify-center items-center gap-x-2">
+<span id="80:206" orderindex="80" style="color: rgba(34, 197, 94, 1);" class="text-sm">+12% predicted ✓</span>
+<iconify-icon id="80:207" orderindex="81" style="color: rgba(34, 197, 94, 1);" icon="lucide:check-circle" class="text-sm"></iconify-icon>
+</div>
+</div>
+<div id="80:208" orderindex="82" class="flex justify-center mb-4">
+</div>
+<div id="80:209" orderindex="83" class="mb-4">
+<div id="80:210" orderindex="80" class="flex justify-between items-center mb-2">
+<div id="80:211" orderindex="80" class="flex items-center gap-x-2">
+<div id="80:212" orderindex="80" style="background-color: rgba(253, 224, 71, 1);" class="w-3 h-3 rounded-full"></div>
+<span id="80:213" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs">Electricity (51%)</span>
+</div>
+<span id="80:214" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="text-xs font-medium">₦18,000</span>
+</div>
+<div id="80:215" orderindex="81" class="flex justify-between items-center mb-2">
+<div id="80:216" orderindex="80" class="flex items-center gap-x-2">
+<div id="80:217" orderindex="80" style="background-color: rgba(52, 211, 153, 1);" class="w-3 h-3 rounded-full"></div>
+<span id="80:218" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs">Service (29%)</span>
+</div>
+<span id="80:219" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="text-xs font-medium">₦10,000</span>
+</div>
+</div>
+<div id="80:220" orderindex="84" style="background: linear-gradient(135deg, rgba(13, 155, 106, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);" class="mb-4 p-3 rounded-lg">
+<div id="80:221" orderindex="80" class="text-xs">
+<div id="80:222" orderindex="80" style="margin-top: 0;" class="flex justify-between mb-2">
+<span id="80:223" orderindex="80" style="color: rgba(107, 114, 128, 1);">Next month forecast:</span>
+<span id="80:224" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="font-medium">₦37.5k (87% confidence)</span>
+</div>
+<div id="80:225" orderindex="81" style="margin-top: 0;" class="flex justify-between mb-2">
+<span id="80:226" orderindex="80" style="color: rgba(107, 114, 128, 1);">vs Area benchmark:</span>
+<span id="80:227" orderindex="81" style="color: rgba(239, 68, 68, 1);" class="font-medium">8% more (₦3k)</span>
+</div>
+<div id="80:228" orderindex="82" class="flex justify-between">
+<span id="80:229" orderindex="80" style="color: rgba(107, 114, 128, 1);">Optimization potential:</span>
+<span id="80:230" orderindex="81" style="color: rgba(34, 197, 94, 1);" class="font-medium">₦5.5k savings</span>
+</div>
+</div>
+</div>
+<div id="80:231" orderindex="85" class="flex gap-x-2">
+<button id="80:232" orderindex="80" class="hover:bg-gray-50 text-sm flex grow shrink justify-center items-center font-medium p-2 border-[1px] border-solid rounded-lg" style="flex-basis: 0%; color: rgba(107, 114, 128, 1); border-color: rgba(229, 231, 235, 1);">
+<span id="80:233" orderindex="80">View Details</span>
+</button>
+<button id="80:234" orderindex="81" class="hover:bg-[#0a8659] text-sm flex grow shrink justify-center items-center font-medium p-2 rounded-lg" style="background-color: rgba(13, 155, 106, 1); flex-basis: 0%; color: rgba(255, 255, 255, 1);">
+<span id="80:235" orderindex="80">Get AI Plan</span>
+</button>
+</div></div>
+<div id="38:145" orderindex="87" class="mb-6">
+<div id="80:236" orderindex="80" class="flex justify-between items-center mb-4">
+<h2 id="80:237" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-lg flex items-center gap-x-2 font-bold">
+<span id="81:4" orderindex="80">Transaction History</span>
+<iconify-icon id="80:238" orderindex="81" style="color: rgba(13, 155, 106, 1);" icon="lucide:sparkles" class="text-sm"></iconify-icon>
+</h2>
+<button id="80:239" orderindex="81" class="hover:bg-gray-50 text-xs flex items-center font-medium border-[1px] border-solid rounded-lg" style="color: rgba(107, 114, 128, 1); padding: 0.5rem 0.75rem; border-color: rgba(229, 231, 235, 1);">
+<span id="80:240" orderindex="80">All/Electricity/Water/AI-Flagged</span>
+</button>
+</div>
+<div id="80:241" orderindex="81" style="background: linear-gradient(135deg, rgba(13, 155, 106, 0.05) 0%, rgba(255, 255, 255, 1) 100%);" class="mb-4 p-3 rounded-lg">
+<div id="80:242" orderindex="80" class="text-center grid grid-cols-2 gap-y-4 gap-x-4">
+<div id="80:243" orderindex="80">
+<div id="80:244" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-lg font-bold">₦35k</div>
+<div id="80:245" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs">This Month</div>
+</div>
+<div id="80:246" orderindex="81">
+<div id="80:247" orderindex="80" style="color: rgba(34, 197, 94, 1);" class="text-lg font-bold">+12%</div>
+<div id="80:248" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs">Trend</div>
+</div>
+<div id="80:249" orderindex="82">
+<div id="80:250" orderindex="80" style="color: rgba(13, 155, 106, 1);" class="text-lg font-bold">All ✓</div>
+<div id="80:251" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs">On Time +3</div>
+</div>
+<div id="80:252" orderindex="83">
+<div id="80:253" orderindex="80" style="color: rgba(251, 191, 36, 1);" class="text-lg font-bold">1</div>
+<div id="80:254" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs">Anomaly Dec 18</div>
+</div>
+</div>
+</div>
+<div id="80:255" orderindex="82" style="background-color: rgba(255, 255, 255, 1); box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1); border-color: rgba(229, 231, 235, 1);" class="border-[1px] border-solid rounded-2xl">
+<div id="80:256" orderindex="80" class="hover:bg-gray-50 border-b-[1px] p-4" style="border-bottom-style: solid; border-color: rgba(229, 231, 235, 1);">
+<div id="80:257" orderindex="80" class="flex items-center gap-x-3">
+<div id="80:258" orderindex="80" style="background-color: rgba(254, 240, 138, 1);" class="flex relative justify-center items-center w-8 h-8 rounded-lg">
+<iconify-icon id="80:259" orderindex="80" style="color: rgba(245, 158, 11, 1);" icon="lucide:zap" class="text-sm"></iconify-icon>
+<iconify-icon id="80:260" orderindex="81" style="color: rgba(251, 191, 36, 1);" icon="lucide:alert-triangle" class="text-xs absolute -top-1 -right-1"></iconify-icon>
+</div>
+<div id="80:261" orderindex="81" class="grow">
+<h4 id="80:262" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-sm font-medium">Electricity Token</h4>
+<p id="80:263" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs">Jan 2, 2024 • AI: 35% higher - check meter?</p>
+</div>
+<div id="80:264" orderindex="82" class="text-right">
+<div id="80:265" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-sm font-bold">₦5,000</div>
+<div id="80:266" orderindex="81" class="flex items-center gap-x-1">
+<span id="80:267" orderindex="80" style="background-color: rgba(13, 155, 106, 0.1); color: rgba(13, 155, 106, 1); padding: 0.125rem 0.375rem;" class="text-xs font-medium rounded-full">Success</span>
+<span id="80:268" orderindex="81" style="color: rgba(13, 155, 106, 1);" class="text-xs">+1</span>
+</div>
+</div>
+</div>
+</div>
+<div id="80:269" orderindex="81" class="hover:bg-gray-50 border-b-[1px] p-4" style="border-bottom-style: solid; border-color: rgba(229, 231, 235, 1);">
+<div id="80:270" orderindex="80" class="flex items-center gap-x-3">
+<div id="80:271" orderindex="80" style="background-color: rgba(220, 252, 231, 1);" class="flex justify-center items-center w-8 h-8 rounded-lg">
+<iconify-icon id="80:272" orderindex="80" style="color: rgba(34, 197, 94, 1);" icon="lucide:building" class="text-sm"></iconify-icon>
+</div>
+<div id="80:273" orderindex="81" class="grow">
+<h4 id="80:274" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-sm font-medium">Service Charge</h4>
+<p id="80:275" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs">Dec 28, 2023 • AI: Verified lease ✓</p>
+</div>
+<div id="80:276" orderindex="82" class="text-right">
+<div id="80:277" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-sm font-bold">₦10,000</div>
+<div id="80:278" orderindex="81" class="flex items-center gap-x-1">
+<span id="80:279" orderindex="80" style="background-color: rgba(13, 155, 106, 0.1); color: rgba(13, 155, 106, 1); padding: 0.125rem 0.375rem;" class="text-xs font-medium rounded-full">Success</span>
+<span id="80:280" orderindex="81" style="color: rgba(13, 155, 106, 1);" class="text-xs">+1</span>
+</div>
+</div>
+</div>
+</div>
+<div id="80:281" orderindex="82" class="hover:bg-gray-50 p-4">
+<div id="80:282" orderindex="80" class="flex justify-between items-center">
+<button id="80:283" orderindex="80" class="hover:bg-gray-100 text-xs flex items-center font-medium p-2 rounded-sm" style="color: rgba(59, 130, 246, 1);">
+<iconify-icon id="80:284" orderindex="80" icon="lucide:receipt" class="text-sm mr-1"></iconify-icon>
+<span id="80:285" orderindex="81">Receipt</span>
+</button>
+<button id="80:286" orderindex="81" class="hover:bg-[#0a8659] text-xs flex items-center font-medium p-2 rounded-sm" style="background-color: rgba(13, 155, 106, 1); color: rgba(255, 255, 255, 1);">
+<iconify-icon id="80:287" orderindex="80" icon="lucide:sparkles" class="text-sm mr-1"></iconify-icon>
+<span id="80:288" orderindex="81">Ask AI</span>
+</button>
+</div>
+</div>
+</div></div>
+<div id="38:230" orderindex="89" style="background-color: rgba(13, 155, 106, 0.05); border-color: rgba(13, 155, 106, 0.2);" class="p-4 border-[1px] border-solid rounded-2xl">
+<div id="80:289" orderindex="80" class="flex items-center gap-x-2 mb-4">
+<iconify-icon id="80:290" orderindex="80" style="color: rgba(13, 155, 106, 1);" icon="lucide:sparkles" class="text-lg"></iconify-icon>
+<h3 id="80:291" orderindex="81" style="color: rgba(4, 50, 78, 1);" class="text-lg font-semibold">AI Assistant</h3>
+</div>
+<div id="80:292" orderindex="81" class="grid grid-cols-2 gap-y-2 gap-x-2 mb-4">
+<button id="80:293" orderindex="80" class="hover:bg-gray-50 text-xs flex flex-col items-center font-medium p-3 border-[1px] border-solid rounded-lg" style="color: rgba(107, 114, 128, 1); border-color: rgba(229, 231, 235, 1);">
+<iconify-icon id="80:294" orderindex="80" icon="lucide:help-circle" class="text-base mb-1"></iconify-icon>
+<span id="80:295" orderindex="81">Ask About Bill</span>
+</button>
+<button id="80:296" orderindex="81" class="hover:bg-gray-50 text-xs flex flex-col items-center font-medium p-3 border-[1px] border-solid rounded-lg" style="color: rgba(107, 114, 128, 1); border-color: rgba(229, 231, 235, 1);">
+<iconify-icon id="80:297" orderindex="80" icon="lucide:bar-chart" class="text-base mb-1"></iconify-icon>
+<span id="80:298" orderindex="81">Get Analysis</span>
+</button>
+<button id="80:299" orderindex="82" class="hover:bg-gray-50 text-xs flex flex-col items-center font-medium p-3 border-[1px] border-solid rounded-lg" style="color: rgba(107, 114, 128, 1); border-color: rgba(229, 231, 235, 1);">
+<iconify-icon id="80:300" orderindex="80" icon="lucide:alert-triangle" class="text-base mb-1"></iconify-icon>
+<span id="80:301" orderindex="81">Report Issue</span>
+</button>
+<button id="80:302" orderindex="83" class="hover:bg-gray-50 text-xs flex flex-col items-center font-medium p-3 border-[1px] border-solid rounded-lg" style="color: rgba(107, 114, 128, 1); border-color: rgba(229, 231, 235, 1);">
+<iconify-icon id="80:303" orderindex="80" icon="lucide:piggy-bank" class="text-base mb-1"></iconify-icon>
+<span id="80:304" orderindex="81">Get Savings</span>
+</button>
+</div>
+<div id="80:305" orderindex="82" style="background: linear-gradient(135deg, rgba(13, 155, 106, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);" class="p-4 rounded-2xl">
+<div id="80:306" orderindex="80" class="flex items-start gap-x-3">
+<div id="80:307" orderindex="80" style="background-color: rgba(13, 155, 106, 1);" class="flex justify-center items-center w-10 h-10 rounded-lg">
+<iconify-icon id="80:308" orderindex="80" style="color: rgba(255, 255, 255, 1);" icon="lucide:shield-check" class="text-base"></iconify-icon>
+</div>
+<div id="80:309" orderindex="81" class="grow">
+<h3 id="80:310" orderindex="80" style="color: rgba(4, 50, 78, 1);" class="text-sm flex items-center gap-x-2 mb-3 font-semibold">
+<span id="81:5" orderindex="80">AI-Secured Platform</span>
+<iconify-icon id="80:311" orderindex="81" style="color: rgba(13, 155, 106, 1);" icon="lucide:sparkles" class="text-sm"></iconify-icon>
+</h3>
+<div id="80:312" orderindex="81" class="mb-3">
+<div id="80:313" orderindex="80" class="flex items-center gap-x-2 mb-2">
+<iconify-icon id="80:314" orderindex="80" style="color: rgba(13, 155, 106, 1);" icon="lucide:check" class="text-xs"></iconify-icon>
+<span id="80:315" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs">99.8% fraud detection accuracy</span>
+</div>
+<div id="80:316" orderindex="81" class="flex items-center gap-x-2 mb-2">
+<iconify-icon id="80:317" orderindex="80" style="color: rgba(13, 155, 106, 1);" icon="lucide:check" class="text-xs"></iconify-icon>
+<span id="80:318" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs">Real-time anomaly detection</span>
+</div>
+<div id="80:319" orderindex="82" class="flex items-center gap-x-2">
+<iconify-icon id="80:320" orderindex="80" style="color: rgba(13, 155, 106, 1);" icon="lucide:check" class="text-xs"></iconify-icon>
+<span id="80:321" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs">95% customer satisfaction</span>
+</div>
+</div>
+<div id="80:322" orderindex="82" class="flex justify-between items-center">
+<div id="80:323" orderindex="80">
+<span id="80:324" orderindex="80" style="color: rgba(107, 114, 128, 1);" class="text-xs">Trust Score:</span>
+<span id="80:325" orderindex="81" style="color: rgba(13, 155, 106, 1);" class="text-xs ml-1 font-medium">On-time payments +1 • Consistency +5 • Trust Badge ⭐</span>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+<div id="38:252" orderindex="82" style="background-color: rgba(255, 255, 255, 1); right: 0; bottom: 0; left: 0; box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1); border-color: rgba(229, 231, 235, 1);" class="fixed border-t-[1px] border-solid">
+<div id="38:253" orderindex="80" style="margin-right: auto; margin-left: auto;" class="max-w-96">
+<div id="38:254" orderindex="80" class="grid grid-cols-5 pt-3 pb-3">
+<button id="38:255" orderindex="80" class="hover:bg-gray-100 flex flex-col items-center gap-y-1 mr-1 ml-1 rounded-lg" style="padding: 0.5rem 0.75rem;">
+<div id="38:256" orderindex="80" class="flex justify-center items-center w-5 h-5">
+<iconify-icon id="38:257" orderindex="80" style="color: rgba(107, 114, 128, 1);" icon="lucide:layout-dashboard"></iconify-icon>
+</div>
+<span id="38:258" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs flex items-center">
+<span id="38:259" orderindex="80">Dashboard</span>
+</span>
+</button>
+<button id="38:260" orderindex="81" class="hover:bg-gray-100 flex flex-col items-center gap-y-1 mr-1 ml-1 rounded-lg" style="padding: 0.5rem 0.75rem;">
+<div id="38:261" orderindex="80" class="flex justify-center items-center w-5 h-5">
+<iconify-icon id="38:262" orderindex="80" style="color: rgba(107, 114, 128, 1);" icon="lucide:search"></iconify-icon>
+</div>
+<span id="38:263" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs flex items-center">
+<span id="38:264" orderindex="80">Search</span>
+</span>
+</button>
+<button id="38:265" orderindex="82" style="background-color: rgba(13, 155, 106, 0.1); padding: 0.5rem 0.75rem;" class="flex flex-col items-center gap-y-1 mr-1 ml-1 rounded-lg">
+<div id="38:266" orderindex="80" class="flex justify-center items-center w-5 h-5">
+<iconify-icon id="38:267" orderindex="80" style="color: rgba(13, 155, 106, 1);" icon="lucide:credit-card"></iconify-icon>
+</div>
+<span id="38:268" orderindex="81" style="color: rgba(13, 155, 106, 1);" class="text-xs flex items-center font-medium">
+<span id="38:269" orderindex="80">Utilities</span>
+</span>
+</button>
+<button id="38:270" orderindex="83" class="hover:bg-gray-100 flex relative flex-col items-center gap-y-1 mr-1 ml-1 rounded-lg" style="padding: 0.5rem 0.75rem;">
+<div id="38:271" orderindex="80" class="flex justify-center items-center w-5 h-5">
+<iconify-icon id="38:272" orderindex="80" style="color: rgba(107, 114, 128, 1);" icon="lucide:message-circle"></iconify-icon>
+</div>
+<span id="38:273" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs flex items-center">
+<span id="38:274" orderindex="80">Messages</span>
+</span>
+<span id="38:275" orderindex="82" style="background-color: rgba(4, 50, 78, 1); color: rgba(255, 255, 255, 1);" class="text-xs flex absolute top-1 right-2 justify-center items-center w-4 h-4 rounded-full">5</span>
+</button>
+<button id="38:276" orderindex="84" class="hover:bg-gray-100 flex flex-col items-center gap-y-1 mr-1 ml-1 rounded-lg" style="padding: 0.5rem 0.75rem;">
+<div id="38:277" orderindex="80" class="flex justify-center items-center w-5 h-5">
+<iconify-icon id="38:278" orderindex="80" style="color: rgba(107, 114, 128, 1);" icon="lucide:user"></iconify-icon>
+</div>
+<span id="38:279" orderindex="81" style="color: rgba(107, 114, 128, 1);" class="text-xs flex items-center">
+<span id="38:280" orderindex="80">Profile</span>
+</span>
+</button>
+</div>
+</div>
+</div>
+
+</body></html>
